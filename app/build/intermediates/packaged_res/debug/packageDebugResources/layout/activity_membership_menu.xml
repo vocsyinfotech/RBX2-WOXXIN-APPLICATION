@@ -1,39 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F5F5">
+    android:background="@color/bg_primary">
 
-    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
-        android:background="@color/theme_color" android:orientation="horizontal"
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+        android:background="@color/bg_surface" android:orientation="horizontal"
         android:gravity="center_vertical" android:paddingHorizontal="8dp">
         <ImageButton android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_back_arrow" android:tint="#FFFFFF" android:contentDescription="Back"/>
+            android:src="@drawable/ic_back_arrow" android:tint="@color/gold" android:contentDescription="Back"/>
         <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-            android:text="Membership Calculator" android:textColor="#FFFFFF" android:textSize="18sp"
+            android:text="Membership Calculator" android:textColor="@color/text_primary" android:textSize="18sp"
             android:textStyle="bold" android:layout_marginStart="4dp"/>
     </LinearLayout>
 
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/bg_divider" />
+
     <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
-        android:layout_weight="1" android:orientation="vertical" android:padding="20dp"
+        android:layout_weight="1" android:orientation="vertical" android:padding="24dp"
         android:gravity="center">
 
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="👑" android:textSize="64sp" android:layout_gravity="center"/>
+            android:text="👑" android:textSize="72sp" android:layout_gravity="center"/>
+
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:text="Choose Membership Type" android:textSize="18sp" android:textStyle="bold"
-            android:layout_marginTop="8dp" android:layout_marginBottom="24dp" android:layout_gravity="center"/>
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="12dp" android:layout_marginBottom="8dp" android:layout_gravity="center"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Select your membership to calculate Robux value"
+            android:textSize="13sp" android:textColor="@color/text_secondary"
+            android:gravity="center" android:layout_marginBottom="36dp"/>
 
         <Button android:id="@+id/btnBcToRbx" android:layout_width="match_parent" android:layout_height="56dp"
             android:layout_marginBottom="12dp" android:text="🔵  BC → Robux  (15/day)"
-            android:textSize="15sp" android:backgroundTint="#1565C0"/>
+            android:textSize="14sp" android:textStyle="bold"
+            android:textColor="@color/text_on_gold"
+            android:backgroundTint="@color/gold" app:cornerRadius="28dp"/>
+
         <Button android:id="@+id/btnTbcToUsd" android:layout_width="match_parent" android:layout_height="56dp"
             android:layout_marginBottom="12dp" android:text="🟣  TBC → USD  (35/day)"
-            android:textSize="15sp" android:backgroundTint="#7B1FA2"/>
+            android:textSize="14sp" android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:backgroundTint="@color/bg_surface_raised" app:cornerRadius="28dp"/>
+
         <Button android:id="@+id/btnObcToRbx" android:layout_width="match_parent" android:layout_height="56dp"
             android:layout_marginBottom="12dp" android:text="🟠  OBC → Robux  (60/day)"
-            android:textSize="15sp" android:backgroundTint="#E65100"/>
+            android:textSize="14sp" android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:backgroundTint="@color/bg_surface_raised" app:cornerRadius="28dp"/>
     </LinearLayout>
 </LinearLayout>

@@ -4,52 +4,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F5F5">
+    android:background="@color/bg_primary">
 
     <!-- Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/theme_color"
-        android:padding="16dp"
+        android:background="@color/bg_surface"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/text_primary"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:letterSpacing="0.01" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
             android:text="@string/subtext"
-            android:textColor="#CCFFFFFF"
-            android:textSize="12sp" />
+            android:textColor="@color/gold"
+            android:textSize="12sp"
+            android:letterSpacing="0.04" />
     </LinearLayout>
+
+    <!-- Gold divider line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gold_dim" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:fillViewport="false">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="12dp">
+            android:padding="16dp">
 
-            <!-- Calculators Section -->
+            <!-- ── Calculators Section ── -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="💱 RBX Calculators"
-                android:textColor="@color/theme_color"
-                android:textSize="16sp"
+                android:text="💱  RBX CALCULATORS"
+                android:textColor="@color/gold"
+                android:textSize="12sp"
                 android:textStyle="bold"
-                android:paddingVertical="8dp" />
+                android:letterSpacing="0.12"
+                android:paddingBottom="10dp" />
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -62,16 +76,18 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:layout_margin="4dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp">
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                        android:orientation="vertical" android:padding="16dp" android:gravity="center">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="💰" android:textSize="32sp" />
+                            android:text="💰" android:textSize="34sp" />
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="RBX → USD" android:textStyle="bold" android:textSize="13sp"
-                            android:layout_marginTop="4dp" android:gravity="center" />
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="8dp" android:gravity="center" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -80,16 +96,18 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:layout_margin="4dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp">
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                        android:orientation="vertical" android:padding="16dp" android:gravity="center">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="💵" android:textSize="32sp" />
+                            android:text="💵" android:textSize="34sp" />
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="USD → RBX" android:textStyle="bold" android:textSize="13sp"
-                            android:layout_marginTop="4dp" android:gravity="center" />
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="8dp" android:gravity="center" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -98,16 +116,18 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:layout_margin="4dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp">
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                        android:orientation="vertical" android:padding="16dp" android:gravity="center">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="🏦" android:textSize="32sp" />
+                            android:text="🏦" android:textSize="34sp" />
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="RBX → Dollar" android:textStyle="bold" android:textSize="13sp"
-                            android:layout_marginTop="4dp" android:gravity="center" />
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="8dp" android:gravity="center" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -116,81 +136,91 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
-                    android:layout_margin="4dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp">
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                        android:orientation="vertical" android:padding="16dp" android:gravity="center">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="🛒" android:textSize="32sp" />
+                            android:text="🛒" android:textSize="34sp" />
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="Dollar → RBX" android:textStyle="bold" android:textSize="13sp"
-                            android:layout_marginTop="4dp" android:gravity="center" />
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="8dp" android:gravity="center" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
 
+            <!-- All Calculators CTA -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardAllCalc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                app:cardCornerRadius="12dp"
-                app:cardBackgroundColor="@color/theme_color"
-                app:cardElevation="4dp">
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/gold"
+                app:cardElevation="0dp">
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                     android:orientation="horizontal" android:padding="14dp" android:gravity="center">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="🧮  All Calculators" android:textColor="#FFFFFF"
-                        android:textStyle="bold" android:textSize="15sp" />
+                        android:text="🧮  All Calculators" android:textColor="@color/text_on_gold"
+                        android:textStyle="bold" android:textSize="14sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Membership Section -->
+            <!-- ── Membership Section ── -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="👑 Membership"
-                android:textColor="@color/theme_color"
-                android:textSize="16sp"
+                android:text="👑  MEMBERSHIP"
+                android:textColor="@color/gold"
+                android:textSize="12sp"
                 android:textStyle="bold"
-                android:paddingTop="12dp"
-                android:paddingBottom="8dp" />
+                android:letterSpacing="0.12"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardMembership"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="4dp">
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/bg_surface">
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical">
+                    android:orientation="horizontal" android:padding="18dp" android:gravity="center_vertical">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:text="👑" android:textSize="28sp" />
                     <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
-                        android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="14dp">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="Membership Calculator" android:textStyle="bold" android:textSize="14sp" />
+                            android:text="Membership Calculator" android:textStyle="bold" android:textSize="14sp"
+                            android:textColor="@color/text_primary" />
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="BC, TBC, OBC Robux values" android:textSize="12sp"
-                            android:textColor="#666666" />
+                            android:textColor="@color/text_secondary" android:layout_marginTop="2dp" />
                     </LinearLayout>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="›" android:textSize="24sp" android:textColor="@color/theme_color" />
+                        android:text="›" android:textSize="24sp" android:textColor="@color/gold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Games Section -->
+            <!-- ── Games Section ── -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="🎮 Games &amp; Fun"
-                android:textColor="@color/theme_color"
-                android:textSize="16sp"
+                android:text="🎮  GAMES &amp; FUN"
+                android:textColor="@color/gold"
+                android:textSize="12sp"
                 android:textStyle="bold"
-                android:paddingTop="12dp"
-                android:paddingBottom="8dp" />
+                android:letterSpacing="0.12"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp" />
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -199,114 +229,135 @@
 
                 <androidx.cardview.widget.CardView android:id="@+id/cardSpin"
                     android:layout_width="0dp" android:layout_height="wrap_content"
-                    android:layout_columnWeight="1" android:layout_margin="4dp"
-                    app:cardCornerRadius="12dp" app:cardElevation="4dp">
+                    android:layout_columnWeight="1" android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                        android:orientation="vertical" android:padding="16dp" android:gravity="center">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="🎡" android:textSize="32sp" />
+                            android:text="🎡" android:textSize="34sp" />
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="Spin Wheel" android:textStyle="bold" android:textSize="13sp"
-                            android:layout_marginTop="4dp" android:gravity="center" />
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="8dp" android:gravity="center" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView android:id="@+id/cardQuiz"
                     android:layout_width="0dp" android:layout_height="wrap_content"
-                    android:layout_columnWeight="1" android:layout_margin="4dp"
-                    app:cardCornerRadius="12dp" app:cardElevation="4dp">
+                    android:layout_columnWeight="1" android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                        android:orientation="vertical" android:padding="16dp" android:gravity="center">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="❓" android:textSize="32sp" />
+                            android:text="❓" android:textSize="34sp" />
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="Quiz Time" android:textStyle="bold" android:textSize="13sp"
-                            android:layout_marginTop="4dp" android:gravity="center" />
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="8dp" android:gravity="center" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView android:id="@+id/cardScratch"
                     android:layout_width="0dp" android:layout_height="wrap_content"
-                    android:layout_columnWeight="1" android:layout_margin="4dp"
-                    app:cardCornerRadius="12dp" app:cardElevation="4dp">
+                    android:layout_columnWeight="1" android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                        android:orientation="vertical" android:padding="16dp" android:gravity="center">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="🎴" android:textSize="32sp" />
+                            android:text="🎴" android:textSize="34sp" />
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="Scratch Card" android:textStyle="bold" android:textSize="13sp"
-                            android:layout_marginTop="4dp" android:gravity="center" />
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="8dp" android:gravity="center" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView android:id="@+id/cardMeme"
                     android:layout_width="0dp" android:layout_height="wrap_content"
-                    android:layout_columnWeight="1" android:layout_margin="4dp"
-                    app:cardCornerRadius="12dp" app:cardElevation="4dp">
+                    android:layout_columnWeight="1" android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                        android:orientation="vertical" android:padding="16dp" android:gravity="center">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="😂" android:textSize="32sp" />
+                            android:text="😂" android:textSize="34sp" />
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="Memes" android:textStyle="bold" android:textSize="13sp"
-                            android:layout_marginTop="4dp" android:gravity="center" />
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="8dp" android:gravity="center" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
 
-            <!-- Info Section -->
+            <!-- ── More Section ── -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="📚 More"
-                android:textColor="@color/theme_color"
-                android:textSize="16sp"
+                android:text="📚  MORE"
+                android:textColor="@color/gold"
+                android:textSize="12sp"
                 android:textStyle="bold"
-                android:paddingTop="12dp"
-                android:paddingBottom="8dp" />
+                android:letterSpacing="0.12"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp" />
 
             <androidx.cardview.widget.CardView android:id="@+id/cardTips"
                 android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:layout_margin="4dp" app:cardCornerRadius="12dp" app:cardElevation="4dp">
+                android:layout_marginStart="5dp" android:layout_marginEnd="5dp"
+                android:layout_marginBottom="6dp"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/bg_surface">
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical">
+                    android:orientation="horizontal" android:padding="18dp" android:gravity="center_vertical">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="💡" android:textSize="28sp" />
+                        android:text="💡" android:textSize="26sp" />
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
-                        android:layout_weight="1" android:layout_marginStart="12dp"
-                        android:text="Tips &amp; Guides" android:textStyle="bold" android:textSize="14sp" />
+                        android:layout_weight="1" android:layout_marginStart="14dp"
+                        android:text="Tips &amp; Guides" android:textStyle="bold" android:textSize="14sp"
+                        android:textColor="@color/text_primary" />
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="›" android:textSize="24sp" android:textColor="@color/theme_color" />
+                        android:text="›" android:textSize="22sp" android:textColor="@color/gold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView android:id="@+id/cardSettings"
                 android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:layout_margin="4dp" app:cardCornerRadius="12dp" app:cardElevation="4dp">
+                android:layout_marginStart="5dp" android:layout_marginEnd="5dp"
+                android:layout_marginBottom="6dp"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/bg_surface">
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical">
+                    android:orientation="horizontal" android:padding="18dp" android:gravity="center_vertical">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="⚙️" android:textSize="28sp" />
+                        android:text="⚙️" android:textSize="26sp" />
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
-                        android:layout_weight="1" android:layout_marginStart="12dp"
-                        android:text="Settings" android:textStyle="bold" android:textSize="14sp" />
+                        android:layout_weight="1" android:layout_marginStart="14dp"
+                        android:text="Settings" android:textStyle="bold" android:textSize="14sp"
+                        android:textColor="@color/text_primary" />
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="›" android:textSize="24sp" android:textColor="@color/theme_color" />
+                        android:text="›" android:textSize="22sp" android:textColor="@color/gold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView android:id="@+id/cardExit"
                 android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:layout_margin="4dp" app:cardCornerRadius="12dp" app:cardElevation="4dp">
+                android:layout_marginStart="5dp" android:layout_marginEnd="5dp"
+                android:layout_marginBottom="6dp"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/bg_surface">
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical">
+                    android:orientation="horizontal" android:padding="18dp" android:gravity="center_vertical">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="🚪" android:textSize="28sp" />
+                        android:text="🚪" android:textSize="26sp" />
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
-                        android:layout_weight="1" android:layout_marginStart="12dp"
-                        android:text="Exit" android:textStyle="bold" android:textSize="14sp" />
+                        android:layout_weight="1" android:layout_marginStart="14dp"
+                        android:text="Exit" android:textStyle="bold" android:textSize="14sp"
+                        android:textColor="@color/text_primary" />
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="›" android:textSize="24sp" android:textColor="#E53935" />
+                        android:text="›" android:textSize="22sp" android:textColor="@color/color_error" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

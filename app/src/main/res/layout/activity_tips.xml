@@ -3,24 +3,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F5F5">
+    android:background="@color/bg_primary">
 
-    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
-        android:background="@color/theme_color" android:orientation="horizontal"
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+        android:background="@color/bg_surface" android:orientation="horizontal"
         android:gravity="center_vertical" android:paddingHorizontal="8dp">
         <ImageButton android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_back_arrow" android:tint="#FFFFFF" android:contentDescription="Back"/>
+            android:src="@drawable/ic_back_arrow" android:tint="@color/gold" android:contentDescription="Back"/>
         <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-            android:text="Tips &amp; Guides" android:textColor="#FFFFFF" android:textSize="18sp"
+            android:text="Tips &amp; Guides" android:textColor="@color/text_primary" android:textSize="18sp"
             android:textStyle="bold" android:layout_marginStart="4dp"/>
     </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/bg_divider" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTips"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="8dp"
+        android:padding="12dp"
         android:clipToPadding="false" />
 </LinearLayout>

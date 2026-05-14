@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="theme_color">#11746e</color>
+    <!-- === Dark Premium + Gold Design System === -->
+
+    <!-- Backgrounds -->
+    <color name="bg_primary">#0D0D0D</color>
+    <color name="bg_surface">#1A1A1A</color>
+    <color name="bg_surface_raised">#242424</color>
+    <color name="bg_divider">#2A2A2A</color>
+
+    <!-- Gold Accent -->
+    <color name="gold">#FFD700</color>
+    <color name="gold_dim">#B8860B</color>
+    <color name="gold_10">#1AFFD700</color>
+    <color name="gold_20">#33FFD700</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#9E9E9E</color>
+    <color name="text_hint">#616161</color>
+    <color name="text_on_gold">#000000</color>
+
+    <!-- Status colors -->
+    <color name="color_error">#CF6679</color>
+    <color name="color_success">#81C784</color>
+
+    <!-- Legacy alias (used by theme + some layouts) -->
+    <color name="theme_color">#FFD700</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
 
-    <!-- iZooto SDK colors -->
+    <!-- iZooto SDK colors (do not rename) -->
     <color name="iz_azure">#0078FF</color>
     <color name="iz_azure_bg">#0078FF</color>
     <color name="iz_white">#FFFFFF</color>

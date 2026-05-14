@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="gcm_defaultSenderId" translatable="false">000000000000</string>
-    <string name="google_api_key" translatable="false">REPLACE_WITH_YOUR_FIREBASE_API_KEY</string>
-    <string name="google_app_id" translatable="false">1:000000000000:android:0000000000000000</string>
-    <string name="google_crash_reporting_api_key" translatable="false">REPLACE_WITH_YOUR_FIREBASE_API_KEY</string>
-    <string name="google_storage_bucket" translatable="false">rbx-calculator-placeholder.appspot.com</string>
-    <string name="project_id" translatable="false">rbx-calculator-placeholder</string>
+    <string name="gcm_defaultSenderId" translatable="false">442589459945</string>
+    <string name="google_api_key" translatable="false">AIzaSyBOIW0xHXv50ZjenH_KiHSYga7FbB0aFC4</string>
+    <string name="google_app_id" translatable="false">1:442589459945:android:b460dc0632c6c032010778</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBOIW0xHXv50ZjenH_KiHSYga7FbB0aFC4</string>
+    <string name="google_storage_bucket" translatable="false">rbx-calculator-robox-cou-4ebe2.firebasestorage.app</string>
+    <string name="project_id" translatable="false">rbx-calculator-robox-cou-4ebe2</string>
 </resources>

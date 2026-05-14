@@ -4,7 +4,7 @@
             "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jay\\Downloads\\RbxCalculator\\app\\src\\main\\res\\values-xlarge\\dimens.xml",
+                    "source": "F:\\android\\woxxin\\WRBX1\\RbxCalculator\\app\\src\\main\\res\\values-xlarge\\dimens.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

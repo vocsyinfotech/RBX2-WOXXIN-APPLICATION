@@ -1,51 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/theme_color">
+    android:orientation="vertical"
+    android:background="@color/bg_primary"
+    android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:gravity="center">
+    <!-- Logo container with gold ring -->
+    <FrameLayout
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center">
+
+        <View
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/circle_gold_ring" />
 
         <ImageView
             android:id="@+id/ivSplashLogo"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center"
             android:src="@mipmap/ic_launcher"
             android:contentDescription="Logo" />
+    </FrameLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/app_name"
-            android:textColor="#FFFFFF"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/app_name"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:letterSpacing="0.02" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/subtext"
-            android:textColor="#CCFFFFFF"
-            android:textSize="13sp"
-            android:gravity="center"
-            android:paddingHorizontal="24dp" />
-    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/subtext"
+        android:textColor="@color/gold"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:letterSpacing="0.05"
+        android:paddingHorizontal="32dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:indeterminateTint="#FFFFFF" />
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:indeterminateTint="@color/gold" />
 
-</RelativeLayout>
+</LinearLayout>

@@ -1,16 +1,19 @@
 package rbx.rbxcalculator.calctool.app.robox.quiz;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import rbx.rbxcalculator.calctool.app.robox.R;
+import rbx.rbxcalculator.calctool.app.robox.helpers.MyApp;
 
 public class QuizTimeActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private static final String TAG = "Firebase_RBX";
 
     private static final String[][] QUESTIONS = {
         {"What is the currency in Roblox?", "Robux", "Lux", "Coins", "Gems", "0"},
@@ -25,6 +28,12 @@ public class QuizTimeActivity extends AppCompatActivity implements View.OnClickL
         {"What is the max Robux you can hold?", "No limit", "1 billion", "100 million", "10 million", "0"}
     };
 
+    // Gold / dark theme colours (match the redesigned layout)
+    private static final int COLOR_GOLD        = 0xFFFFD700;
+    private static final int COLOR_SURFACE      = 0xFF1A1A1A;
+    private static final int COLOR_CORRECT      = 0xFF4CAF50;
+    private static final int COLOR_WRONG        = 0xFFCF6679;
+
     private int currentQ = 0;
     private int score = 0;
 
@@ -36,8 +45,11 @@ public class QuizTimeActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
+        Log.d(TAG, "❓ QuizTimeActivity opened");
+        MyApp.logEvent("screen_view", "screen_name", "quiz");
+
         tvQuestion = findViewById(R.id.tvQuestion);
-        tvScore = findViewById(R.id.tvScore);
+        tvScore    = findViewById(R.id.tvScore);
         tvProgress = findViewById(R.id.tvProgress);
         optionBtns = new Button[]{
                 findViewById(R.id.btnOpt1),
@@ -54,17 +66,28 @@ public class QuizTimeActivity extends AppCompatActivity implements View.OnClickL
         if (currentQ >= QUESTIONS.length) {
             tvQuestion.setText("Quiz Complete!\nScore: " + score + "/" + QUESTIONS.length);
             for (Button b : optionBtns) b.setVisibility(View.GONE);
+
+            Log.d(TAG, "══════════════════════════════════════════");
+            Log.d(TAG, "🏆 QUIZ COMPLETE");
+            Log.d(TAG, "  Final score : " + score + "/" + QUESTIONS.length);
+            Log.d(TAG, "══════════════════════════════════════════");
+            MyApp.logEvent("quiz_complete", "score", score + "_of_" + QUESTIONS.length);
             return;
         }
         String[] q = QUESTIONS[currentQ];
         tvQuestion.setText(q[0]);
         tvProgress.setText((currentQ + 1) + "/" + QUESTIONS.length);
         tvScore.setText("Score: " + score);
+
+        // Reset button colours to match the dark/gold theme
         for (int i = 0; i < optionBtns.length; i++) {
             optionBtns[i].setText(q[i + 1]);
-            optionBtns[i].setBackgroundColor(Color.parseColor("#11746e"));
+            optionBtns[i].setBackgroundColor(i % 2 == 0 ? COLOR_GOLD : COLOR_SURFACE);
+            optionBtns[i].setTextColor(i % 2 == 0 ? 0xFF000000 : 0xFFFFFFFF);
             optionBtns[i].setEnabled(true);
         }
+
+        Log.d(TAG, "❓ Q" + (currentQ + 1) + ": " + q[0]);
     }
 
     @Override
@@ -78,12 +101,28 @@ public class QuizTimeActivity extends AppCompatActivity implements View.OnClickL
         if (selected < 0) return;
 
         for (Button b : optionBtns) b.setEnabled(false);
-        optionBtns[correct].setBackgroundColor(Color.GREEN);
-        if (selected != correct) {
-            optionBtns[selected].setBackgroundColor(Color.RED);
+
+        // Highlight correct answer green, wrong answer red
+        optionBtns[correct].setBackgroundColor(COLOR_CORRECT);
+        optionBtns[correct].setTextColor(0xFFFFFFFF);
+        boolean isCorrect = selected == correct;
+        if (!isCorrect) {
+            optionBtns[selected].setBackgroundColor(COLOR_WRONG);
+            optionBtns[selected].setTextColor(0xFFFFFFFF);
         } else {
             score++;
         }
+
+        Log.d(TAG, "══════════════════════════════════════════");
+        Log.d(TAG, "📝 QUIZ ANSWER");
+        Log.d(TAG, "  Question : " + q[0]);
+        Log.d(TAG, "  Selected : " + q[selected + 1] + " (index " + selected + ")");
+        Log.d(TAG, "  Correct  : " + q[correct + 1] + " (index " + correct + ")");
+        Log.d(TAG, "  Result   : " + (isCorrect ? "✅ CORRECT" : "❌ WRONG"));
+        Log.d(TAG, "  Score    : " + score + "/" + (currentQ + 1));
+        Log.d(TAG, "══════════════════════════════════════════");
+
+        MyApp.logEvent("quiz_answer", "result", isCorrect ? "correct" : "wrong");
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             currentQ++;

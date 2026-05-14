@@ -4,7 +4,26 @@
             "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jay\\Downloads\\RbxCalculator\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "F:\\android\\woxxin\\WRBX1\\RbxCalculator\\app\\src\\main\\res\\values-land\\styles.xml",
+                    "from": {
+                        "startLines": "2,6,15",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,244,850",
+                        "endLines": "5,14,17",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "239,845,1086"
+                    },
+                    "to": {
+                        "startLines": "25,29,43",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1703,1892,2767",
+                        "endLines": "28,37,45",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "1887,2493,3003"
+                    }
+                },
+                {
+                    "source": "F:\\android\\woxxin\\WRBX1\\RbxCalculator\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jay\\Downloads\\RbxCalculator\\app\\src\\main\\res\\values-land\\integers.xml",
+                    "source": "F:\\android\\woxxin\\WRBX1\\RbxCalculator\\app\\src\\main\\res\\values-land\\integers.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -54,25 +73,6 @@
                         "endLines": "7,8,9,10,42",
                         "endColumns": "72,69,71,69,10",
                         "endOffsets": "481,551,623,693,2762"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Jay\\Downloads\\RbxCalculator\\app\\src\\main\\res\\values-land\\styles.xml",
-                    "from": {
-                        "startLines": "2,6,15",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,244,850",
-                        "endLines": "5,14,17",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "239,845,1086"
-                    },
-                    "to": {
-                        "startLines": "25,29,43",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "1703,1892,2767",
-                        "endLines": "28,37,45",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "1887,2493,3003"
                     }
                 }
             ]

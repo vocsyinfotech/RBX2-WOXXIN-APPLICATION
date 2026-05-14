@@ -4,7 +4,7 @@
             "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jay\\Downloads\\RbxCalculator\\app\\src\\main\\res\\values-port\\bools.xml",
+                    "source": "F:\\android\\woxxin\\WRBX1\\RbxCalculator\\app\\src\\main\\res\\values-port\\bools.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

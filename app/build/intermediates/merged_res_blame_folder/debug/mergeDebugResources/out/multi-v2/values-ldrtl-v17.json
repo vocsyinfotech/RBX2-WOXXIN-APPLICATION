@@ -4,7 +4,7 @@
             "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jay\\Downloads\\RbxCalculator\\app\\src\\main\\res\\values-ldrtl\\drawables.xml",
+                    "source": "F:\\android\\woxxin\\WRBX1\\RbxCalculator\\app\\src\\main\\res\\values-ldrtl\\drawables.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

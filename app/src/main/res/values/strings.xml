@@ -4,10 +4,10 @@
 
     <!-- Firebase / Google Services -->
     <string name="gcm_defaultSenderId" translatable="false">442589459945</string>
-    <string name="google_app_id" translatable="false">1:442589459945:android:b1c2d3e4f5a6b7c8d9e0f1a2</string>
-    <string name="google_api_key" translatable="false">AIzaSyD-PLACEHOLDER_KEY_FOR_BUILD</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD-PLACEHOLDER_KEY_FOR_BUILD</string>
-    <string name="google_storage_bucket" translatable="false">rbx-calculator-robox-cou-4ebe2.appspot.com</string>
+    <string name="google_app_id" translatable="false">1:442589459945:android:b460dc0632c6c032010778</string>
+    <string name="google_api_key" translatable="false">AIzaSyBOIW0xHXv50ZjenH_KiHSYga7FbB0aFC4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBOIW0xHXv50ZjenH_KiHSYga7FbB0aFC4</string>
+    <string name="google_storage_bucket" translatable="false">rbx-calculator-robox-cou-4ebe2.firebasestorage.app</string>
     <string name="project_id" translatable="false">rbx-calculator-robox-cou-4ebe2</string>
 
     <!-- UI strings -->
@@ -58,10 +58,10 @@
     <string name="tip_10_body">The Robux to USD rate changes over time. Keep track of the current rate using this calculator to make smarter spending decisions.</string>
 
     <!-- App subtitle -->
-    <string name="subtext">Robux to USD Converter</string>
+    <string name="subtext">Your Ultimate App to Play Win and Collect RBX Daily</string>
 
     <!-- Privacy policy URL -->
-    <string name="policy" translatable="false">https://sites.google.com/view/rbxcalculator-privacy/privacy-policy</string>
+    <string name="policy" translatable="false">https://sites.google.com/view/rbx-calculatorapp/home</string>
 
     <!-- Tips titles -->
     <string name="robux_getting_started_with_robx">Getting Started with Robux</string>

@@ -4,56 +4,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F5F5">
+    android:background="@color/bg_primary">
 
-    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
-        android:background="@color/theme_color" android:orientation="horizontal"
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+        android:background="@color/bg_surface" android:orientation="horizontal"
         android:gravity="center_vertical" android:paddingHorizontal="8dp">
         <ImageButton android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_back_arrow" android:tint="#FFFFFF" android:contentDescription="Back"/>
+            android:src="@drawable/ic_back_arrow" android:tint="@color/gold" android:contentDescription="Back"/>
         <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-            android:text="All Calculators" android:textColor="#FFFFFF" android:textSize="18sp"
+            android:text="All Calculators" android:textColor="@color/text_primary" android:textSize="18sp"
             android:textStyle="bold" android:layout_marginStart="4dp" />
     </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/bg_divider" />
 
     <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
             android:orientation="vertical" android:padding="16dp">
 
+            <!-- Currency section label -->
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="💱 Currency Converters" android:textColor="@color/theme_color"
-                android:textSize="15sp" android:textStyle="bold" android:paddingBottom="8dp"/>
+                android:text="💱  CURRENCY CONVERTERS"
+                android:textColor="@color/gold" android:textSize="12sp" android:textStyle="bold"
+                android:letterSpacing="0.12" android:paddingBottom="12dp"/>
 
             <Button android:id="@+id/btnRbxToUsd" android:layout_width="match_parent" android:layout_height="52dp"
-                android:layout_marginBottom="8dp" android:text="Robux → USD" android:textSize="15sp"
-                android:backgroundTint="@color/theme_color"/>
-            <Button android:id="@+id/btnUsdToRbx" android:layout_width="match_parent" android:layout_height="52dp"
-                android:layout_marginBottom="8dp" android:text="USD → Robux" android:textSize="15sp"
-                android:backgroundTint="#1A8A7A"/>
-            <Button android:id="@+id/btnRbxToDollar" android:layout_width="match_parent" android:layout_height="52dp"
-                android:layout_marginBottom="8dp" android:text="Robux → Dollar (DevEx)" android:textSize="15sp"
-                android:backgroundTint="@color/theme_color"/>
-            <Button android:id="@+id/btnDollarToRbx" android:layout_width="match_parent" android:layout_height="52dp"
-                android:layout_marginBottom="16dp" android:text="Dollar → Robux" android:textSize="15sp"
-                android:backgroundTint="#1A8A7A"/>
+                android:layout_marginBottom="10dp" android:text="Robux → USD" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="@color/text_on_gold"
+                android:backgroundTint="@color/gold" app:cornerRadius="26dp"/>
 
+            <Button android:id="@+id/btnUsdToRbx" android:layout_width="match_parent" android:layout_height="52dp"
+                android:layout_marginBottom="10dp" android:text="USD → Robux" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="@color/text_primary"
+                android:backgroundTint="@color/bg_surface" app:cornerRadius="26dp"/>
+
+            <Button android:id="@+id/btnRbxToDollar" android:layout_width="match_parent" android:layout_height="52dp"
+                android:layout_marginBottom="10dp" android:text="Robux → Dollar (DevEx)" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="@color/text_on_gold"
+                android:backgroundTint="@color/gold" app:cornerRadius="26dp"/>
+
+            <Button android:id="@+id/btnDollarToRbx" android:layout_width="match_parent" android:layout_height="52dp"
+                android:layout_marginBottom="20dp" android:text="Dollar → Robux" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="@color/text_primary"
+                android:backgroundTint="@color/bg_surface" app:cornerRadius="26dp"/>
+
+            <!-- Membership section label -->
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="👑 Membership" android:textColor="@color/theme_color"
-                android:textSize="15sp" android:textStyle="bold" android:paddingBottom="8dp"/>
+                android:text="👑  MEMBERSHIP"
+                android:textColor="@color/gold" android:textSize="12sp" android:textStyle="bold"
+                android:letterSpacing="0.12" android:paddingBottom="12dp"/>
 
             <Button android:id="@+id/btnMembership" android:layout_width="match_parent" android:layout_height="52dp"
-                android:layout_marginBottom="8dp" android:text="Membership Calculator" android:textSize="15sp"
-                android:backgroundTint="#7B1FA2"/>
+                android:layout_marginBottom="10dp" android:text="Membership Calculator" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="@color/text_on_gold"
+                android:backgroundTint="@color/gold" app:cornerRadius="26dp"/>
+
             <Button android:id="@+id/btnBcToRbx" android:layout_width="match_parent" android:layout_height="52dp"
-                android:layout_marginBottom="8dp" android:text="BC → Robux" android:textSize="15sp"
-                android:backgroundTint="#1565C0"/>
+                android:layout_marginBottom="10dp" android:text="BC → Robux" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="@color/text_primary"
+                android:backgroundTint="@color/bg_surface" app:cornerRadius="26dp"/>
+
             <Button android:id="@+id/btnObcToRbx" android:layout_width="match_parent" android:layout_height="52dp"
-                android:layout_marginBottom="8dp" android:text="OBC → Robux" android:textSize="15sp"
-                android:backgroundTint="#E65100"/>
+                android:layout_marginBottom="10dp" android:text="OBC → Robux" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="@color/text_primary"
+                android:backgroundTint="@color/bg_surface" app:cornerRadius="26dp"/>
+
             <Button android:id="@+id/btnTbcToUsd" android:layout_width="match_parent" android:layout_height="52dp"
-                android:layout_marginBottom="16dp" android:text="TBC → USD" android:textSize="15sp"
-                android:backgroundTint="#2E7D32"/>
+                android:layout_marginBottom="16dp" android:text="TBC → USD" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="@color/text_primary"
+                android:backgroundTint="@color/bg_surface" app:cornerRadius="26dp"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

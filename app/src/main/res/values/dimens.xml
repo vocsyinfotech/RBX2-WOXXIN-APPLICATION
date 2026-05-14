@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Common spacing dimens (iZooto SDK + app) -->
+    <!-- Spacing scale -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">32dp</dimen>
+    <dimen name="space_xxl">48dp</dimen>
+
+    <!-- Screen padding -->
+    <dimen name="screen_padding">16dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_corner">16dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="card_margin">6dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">60dp</dimen>
+
+    <!-- Buttons -->
+    <dimen name="btn_height">52dp</dimen>
+    <dimen name="btn_height_lg">60dp</dimen>
+    <dimen name="btn_corner">26dp</dimen>
+
+    <!-- Typography -->
+    <dimen name="text_display">28sp</dimen>
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_subtitle">16sp</dimen>
+    <dimen name="text_body_lg">15sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_label">13sp</dimen>
+
+    <!-- Icon sizes -->
+    <dimen name="icon_xl">48sp</dimen>
+    <dimen name="icon_lg">36sp</dimen>
+    <dimen name="icon_md">28sp</dimen>
+
+    <!-- Legacy dimens (iZooto SDK + backwards compat) -->
     <dimen name="margin_1dp">1dp</dimen>
     <dimen name="margin_2dp">2dp</dimen>
     <dimen name="margin_2dsp">2dp</dimen>
@@ -15,8 +54,6 @@
     <dimen name="margin_20dp">20dp</dimen>
     <dimen name="margin_30dp">30dp</dimen>
     <dimen name="margin_start">16dp</dimen>
-
-    <!-- Common size dimens -->
     <dimen name="height_16dp">16dp</dimen>
     <dimen name="height_17dp">17dp</dimen>
     <dimen name="height_18dp">18dp</dimen>
@@ -33,8 +70,6 @@
     <dimen name="width_25dp">25dp</dimen>
     <dimen name="width_35dp">35dp</dimen>
     <dimen name="width_60dp">60dp</dimen>
-
-    <!-- Text sizes -->
     <dimen name="text_13sp">13sp</dimen>
     <dimen name="text_14sp">14sp</dimen>
     <dimen name="text_15sp">15sp</dimen>
