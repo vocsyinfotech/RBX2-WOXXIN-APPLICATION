@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-4\\2317c4883f23c6c8922916948ed77225\\transformed\\appcompat-1.7.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

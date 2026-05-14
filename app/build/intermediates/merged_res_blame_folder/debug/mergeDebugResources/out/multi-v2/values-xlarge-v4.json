@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-xlarge-v4/values-xlarge-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jay\\Downloads\\RbxCalculator\\app\\src\\main\\res\\values-xlarge\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,173,230",
+                        "endColumns": "58,58,56,56",
+                        "endOffsets": "109,168,225,282"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "197,256,315,372",
+                        "endColumns": "58,58,56,56",
+                        "endOffsets": "251,310,367,424"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-4\\2317c4883f23c6c8922916948ed77225\\transformed\\appcompat-1.7.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,126",
+                        "endColumns": "70,70",
+                        "endOffsets": "121,192"
+                    }
+                }
+            ]
+        }
+    ]
+}

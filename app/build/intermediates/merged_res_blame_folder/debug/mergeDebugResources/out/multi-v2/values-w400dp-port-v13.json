@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jay\\Downloads\\RbxCalculator\\app\\src\\main\\res\\values-w400dp-port\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,114,170,226,281,346",
+                        "endColumns": "58,55,55,54,64,68",
+                        "endOffsets": "109,165,221,276,341,410"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,7,8,9",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,114,170,358,413,478",
+                        "endColumns": "58,55,55,54,64,68",
+                        "endOffsets": "109,165,221,408,473,542"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-4\\9f06a2b80b25764227dc100144d8388a\\transformed\\material-1.12.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
+                    "from": {
+                        "startLines": "5,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "226,293",
+                        "endColumns": "66,64",
+                        "endOffsets": "288,353"
+                    }
+                }
+            ]
+        }
+    ]
+}

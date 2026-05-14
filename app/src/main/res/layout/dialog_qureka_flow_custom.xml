@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/int_bg" android:background="#121313" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="end" android:layout_gravity="left" android:orientation="horizontal" android:id="@+id/ad_choices_container" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="#121313" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:background="@drawable/gradient_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="#fff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp" android:text="AD" android:includeFontPadding="false" android:fontFamily="@font/medium"/>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@+id/imgClose" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:cardBackgroundColor="@color/theme_color" app:cardCornerRadius="@dimen/_100sdp" app:cardElevation="@dimen/_1sdp">
+                <ImageView android:padding="@dimen/_3sdp" android:layout_width="@dimen/_20sdp" android:layout_height="match_parent" android:src="@drawable/ic_close" android:tint="@color/white"/>
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="#121313" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvTimer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/_20sdp" android:minHeight="@dimen/_20sdp" android:text="5" android:fontFamily="@font/medium"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llPersonalAdCenter" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView android:id="@+id/cvTopAd" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/_20sdp" app:cardCornerRadius="@dimen/_15sdp" app:cardElevation="@dimen/_10sdp"/>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/_10sdp" app:cardBackgroundColor="#ffffffff" app:cardCornerRadius="@dimen/_15sdp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_15sdp">
+                                <ImageView android:id="@+id/native_ad_icon" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/_200sdp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/aa" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_20sdp" android:layout_weight="1">
+                            <LinearLayout android:orientation="vertical" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/native_ad_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/_5sdp" android:fontFamily="@font/medium"/>
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/_14sdp" android:textColor="#595959" android:layout_gravity="center" android:id="@+id/native_ad_desc" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginTop="@dimen/_5sdp" android:text="" android:fontFamily="@font/medium"/>
+                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/userCount" android:layout_width="match_parent" android:layout_height="@dimen/_50sdp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                        <TextView android:textSize="@dimen/_14sdp" android:textColor="#787777" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.7" android:includeFontPadding="false" android:fontFamily="@font/medium"/>
+                                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:layout_marginLeft="@dimen/_5sdp" android:src="@drawable/star"/>
+                                    </LinearLayout>
+                                    <RatingBar android:layout_gravity="center" android:id="@+id/ad_stars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="?android:attr/ratingBarStyleSmall"/>
+                                </LinearLayout>
+                                <View android:background="#c7c5c5" android:layout_width="@dimen/_2sdp" android:layout_height="wrap_content"/>
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                    <ImageView android:layout_gravity="center" android:layout_width="@dimen/_14sdp" android:layout_height="@dimen/_14sdp" android:src="@drawable/ic_download"/>
+                                    <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="#c7c5c5" android:layout_gravity="center" android:id="@+id/txt_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp" android:text="10000+" android:includeFontPadding="false" android:fontFamily="@font/medium"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/_11sdp" android:textColor="#c7c5c5" android:gravity="center" android:id="@+id/native_ad_social_context" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:lines="2" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/_5sdp" android:fontFamily="@font/medium"/>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/adPersonalLlPlayStore" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                                <ImageView android:layout_gravity="center" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_playstore"/>
+                                <TextView android:textSize="@dimen/_14sdp" android:textColor="#595959" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:text="Google Playstore" android:includeFontPadding="false" android:fontFamily="@font/medium"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/adPersonalLlCloseInstallBtnsCenter" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/_30sdp" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_20sdp" android:layout_marginBottom="@dimen/_20sdp">
+                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/adCloseBtn" android:background="@drawable/custom_box" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/_4sdp" android:layout_weight="1">
+                                <TextView android:textSize="@dimen/_12sdp" android:textColor="#121313" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Close" android:includeFontPadding="false" android:fontFamily="@font/medium"/>
+                                <TextView android:textSize="@dimen/_14sdp" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="  |  " android:includeFontPadding="false"/>
+                                <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                                    <TextView android:textSize="@dimen/_12sdp" android:textColor="#121313" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvTimer1" android:visibility="gone" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:text="5" android:includeFontPadding="false" android:layout_centerVertical="true" android:fontFamily="@font/medium"/>
+                                    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/done1" android:visibility="visible" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:src="@drawable/ic_done" android:adjustViewBounds="true" android:layout_centerVertical="true"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/_12sdp" android:textColor="#fff" android:gravity="center" android:id="@+id/native_ad_call_to_action" android:background="@drawable/gradient_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_4sdp" android:text="Play Now" android:includeFontPadding="false" android:layout_weight="1" android:fontFamily="@font/medium"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

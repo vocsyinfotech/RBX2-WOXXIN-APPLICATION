@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#11746e</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+
+    <!-- iZooto SDK colors -->
+    <color name="iz_azure">#0078FF</color>
+    <color name="iz_azure_bg">#0078FF</color>
+    <color name="iz_white">#FFFFFF</color>
+    <color name="iz_black">#000000</color>
+    <color name="iz_button">#0078FF</color>
+    <color name="iz_chronometer">#333333</color>
+    <color name="iz_dawn">#E0E0E0</color>
+    <color name="iz_granite">#757575</color>
+    <color name="iz_time">#555555</color>
+    <color name="iz_timer_persistent">#0078FF</color>
+    <color name="iz_notificationBg">#FFFFFF</color>
+    <color name="iz_notificationMBg">#F5F5F5</color>
+    <color name="iz_news_hub_bg">#FFFFFF</color>
+    <color name="iz_news_hub_branding_text_color">#757575</color>
+    <color name="iz_news_hub_no_new_updates">#333333</color>
+    <color name="iz_news_hub_view_color">#FFFFFF</color>
+    <color name="iz_news_nub_no_data_found_text">#757575</color>
+</resources>

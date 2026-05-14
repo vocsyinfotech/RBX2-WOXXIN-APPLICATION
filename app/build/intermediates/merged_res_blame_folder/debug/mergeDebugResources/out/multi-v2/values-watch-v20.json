@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jay\\Downloads\\RbxCalculator\\app\\src\\main\\res\\values-watch\\styles.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,278,513",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "273,508,745"
+                    }
+                }
+            ]
+        }
+    ]
+}

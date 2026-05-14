@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rbx Calculator : Robox Counter</string>
+
+    <!-- Firebase / Google Services -->
+    <string name="gcm_defaultSenderId" translatable="false">442589459945</string>
+    <string name="google_app_id" translatable="false">1:442589459945:android:b1c2d3e4f5a6b7c8d9e0f1a2</string>
+    <string name="google_api_key" translatable="false">AIzaSyD-PLACEHOLDER_KEY_FOR_BUILD</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD-PLACEHOLDER_KEY_FOR_BUILD</string>
+    <string name="google_storage_bucket" translatable="false">rbx-calculator-robox-cou-4ebe2.appspot.com</string>
+    <string name="project_id" translatable="false">rbx-calculator-robox-cou-4ebe2</string>
+
+    <!-- UI strings -->
+    <string name="enter_amount">Enter Amount</string>
+    <string name="calculate">Calculate</string>
+    <string name="result">Result</string>
+    <string name="robux">Robux</string>
+    <string name="usd">USD</string>
+    <string name="back">Back</string>
+    <string name="settings">Settings</string>
+    <string name="rate">Rate</string>
+    <string name="spin_wheel">Spin the Wheel</string>
+    <string name="scratch_card">Scratch Card</string>
+    <string name="quiz_time">Quiz Time</string>
+    <string name="meme">Meme</string>
+    <string name="tips">Tips</string>
+    <string name="membership">Membership</string>
+
+    <!-- Tips -->
+    <string name="tip_1_title">Buy Robux in Bulk</string>
+    <string name="tip_1_body">Purchasing Robux in larger amounts gives you more value per dollar. The bigger the bundle, the better the rate you get.</string>
+
+    <string name="tip_2_title">Join Roblox Premium</string>
+    <string name="tip_2_body">Roblox Premium members receive a monthly Robux stipend and a 10% bonus when purchasing Robux, making it a great deal for regular players.</string>
+
+    <string name="tip_3_title">Earn via DevEx</string>
+    <string name="tip_3_body">Developers can exchange earned Robux for real money through the Developer Exchange (DevEx) program. You need at least 100,000 Robux to exchange.</string>
+
+    <string name="tip_4_title">Trade Limiteds Wisely</string>
+    <string name="tip_4_body">Limited items can be traded and resold. Learn the market trends to buy low and sell high to grow your Robux balance.</string>
+
+    <string name="tip_5_title">Sell Game Passes</string>
+    <string name="tip_5_body">If you create games, selling game passes is a great way to earn Robux. Unique perks attract more buyers.</string>
+
+    <string name="tip_6_title">Create and Sell UGC</string>
+    <string name="tip_6_body">User Generated Content (UGC) creators can sell hats, shirts, and accessories. Quality designs generate passive Robux income.</string>
+
+    <string name="tip_7_title">Participate in Events</string>
+    <string name="tip_7_body">Roblox frequently holds events with free item rewards. Collecting these can boost your inventory value significantly.</string>
+
+    <string name="tip_8_title">Use Group Funds</string>
+    <string name="tip_8_body">Group owners can earn Robux from game revenue and distribute funds. Joining active groups can be a source of Robux.</string>
+
+    <string name="tip_9_title">Avoid Scams</string>
+    <string name="tip_9_body">Never trust sites promising free Robux. Only obtain Robux through the official Roblox platform or legitimate game earnings.</string>
+
+    <string name="tip_10_title">Monitor Exchange Rates</string>
+    <string name="tip_10_body">The Robux to USD rate changes over time. Keep track of the current rate using this calculator to make smarter spending decisions.</string>
+
+    <!-- App subtitle -->
+    <string name="subtext">Robux to USD Converter</string>
+
+    <!-- Privacy policy URL -->
+    <string name="policy" translatable="false">https://sites.google.com/view/rbxcalculator-privacy/privacy-policy</string>
+
+    <!-- Tips titles -->
+    <string name="robux_getting_started_with_robx">Getting Started with Robux</string>
+    <string name="robux_earning_robx">Earning Robux</string>
+    <string name="robux_customizing_your_avatar">Customizing Your Avatar</string>
+    <string name="robux_maximizing_gameplay_with_robx">Maximizing Gameplay with Robux</string>
+    <string name="robux_spending_robx_wisely">Spending Robux Wisely</string>
+    <string name="robux_managing_your_robx_account">Managing Your Robux Account</string>
+    <string name="robux_tips_for_robx_savers">Tips for Robux Savers</string>
+    <string name="robux_tracking_robx_spending">Tracking Robux Spending</string>
+    <string name="robux_exclusive_robx_rewards">Exclusive Robux Rewards</string>
+    <string name="robux_exploring_the_roblox_ecosystem">Exploring the Roblox Ecosystem</string>
+
+    <!-- Tips detail bodies -->
+    <string name="robux_getting_started_with_robx_details">Robux is the virtual currency used in Roblox. You can buy Robux directly through the Roblox app or website. Use this calculator to understand how much real money you\'re spending before making a purchase.</string>
+    <string name="robux_earning_robx_details">You can earn Robux by creating and selling games, clothing, and accessories in the Roblox marketplace. Developers with Premium can also monetize their games through passes and developer products.</string>
+    <string name="robux_customizing_your_avatar_details">Spend Robux to customize your Roblox avatar with unique outfits, accessories, and animations. Look for sales and bundles in the Avatar Shop to get the most value for your Robux.</string>
+    <string name="robux_maximizing_gameplay_with_robx_details">Many Roblox games offer in-game perks, passes, and upgrades that can be purchased with Robux. Evaluate whether these purchases genuinely enhance your experience before buying.</string>
+    <string name="robux_spending_robx_wisely_details">Always check the Robux price before purchasing. Use this calculator to convert Robux to USD so you always know the real-world value of what you\'re spending.</string>
+    <string name="robux_managing_your_robx_account_details">Keep track of your Robux balance by checking the Roblox website or app regularly. Enable parental controls to set spending limits for younger players.</string>
+    <string name="robux_tips_for_robx_savers_details">Buy Robux in larger bundles to get better value. Roblox Premium members also receive a monthly Robux allowance, which can significantly reduce your spending over time.</string>
+    <string name="robux_tracking_robx_spending_details">Use this Robux Calculator to monitor how much you\'ve spent and plan future purchases. Keeping a budget helps you enjoy Roblox without overspending.</string>
+    <string name="robux_exclusive_robx_rewards_details">Participate in Roblox events and promotions to earn free limited-time items. These can be traded or used to enhance your game without spending extra Robux.</string>
+    <string name="robux_exploring_the_roblox_ecosystem_details">Roblox has thousands of games and experiences created by the community. Explore free games before purchasing passes or upgrades to ensure you enjoy the experience first.</string>
+
+    <!-- iZooto SDK strings -->
+    <string name="todo" translatable="false">Back</string>
+    <string name="news_hub" translatable="false">News Hub</string>
+    <string name="news_hub_powered_by" translatable="false">Powered by </string>
+    <string name="izooto" translatable="false">iZooto</string>
+    <string name="no_new_update" translatable="false">No New Updates</string>
+    <string name="watch_this_space_to_get_latest_updates" translatable="false">Watch this space to get latest updates</string>
+    <string name="iz_cta_dismissed" translatable="false">Dismissed</string>
+    <string name="iz_share" translatable="false">Share</string>
+</resources>

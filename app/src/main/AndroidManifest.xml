@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".helpers.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="RbxCalculator"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RbxCalculatorRoboxCounter"
+        android:usesCleartextTraffic="true">
+
+        <!-- Launcher -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Core screens -->
+        <activity android:name=".ActivityStart"           android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity"            android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".AllRbxCalculatorActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".SettingActivity"         android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".ExitScreen"              android:exported="false" android:screenOrientation="portrait" />
+
+        <!-- Calculators -->
+        <activity android:name=".allcalc.RbxToUsdActivity"    android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".allcalc.UsdToRbxActivity"    android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".allcalc.RbxToDollarActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".allcalc.DollarToRbxActivity" android:exported="false" android:screenOrientation="portrait" />
+
+        <!-- Membership -->
+        <activity android:name=".membership.MembershipCalculator" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".membership.BcToRbxActivity"      android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".membership.ObcToRbxActivity"     android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".membership.TbcToUsdActivity"     android:exported="false" android:screenOrientation="portrait" />
+
+        <!-- Games & Features -->
+        <activity android:name=".tips.TipsActivity"             android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".tips.TipsDetailsActivity"       android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".spin.SpinWheelActivity"         android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".quiz.QuizTimeActivity"          android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".scratchcard.ScratchcardActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".meme.MemeActivity"              android:exported="false" android:screenOrientation="portrait" />
+
+        <!-- Post-call ad -->
+        <activity
+            android:name=".postcall.ActivityPostCallForAd"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true" />
+
+        <receiver
+            android:name=".postcall.CallStateReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- AdMob -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@xml/gma_ad_services_config"
+            tools:replace="android:resource" />
+
+        <!-- Firebase -->
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+    </application>
+</manifest>
