@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_primary">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bg_surface"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="8dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/gold"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Daily Reward 🎁"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_divider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Streak header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_surface"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tvStreakTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Your Streak!"
+                    android:textColor="@color/gold"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvStreakSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day 1 of 7"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- Section label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WEEKLY REWARDS"
+                android:textColor="@color/gold"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Day cards row 1: Days 1–4 -->
+            <LinearLayout
+                android:id="@+id/dayCardsRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Day cards row 2: Days 5–7 (centred by half-weight spacers in code) -->
+            <LinearLayout
+                android:id="@+id/dayCardsRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_divider"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Today's reward -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TODAY'S REWARD"
+                android:textColor="@color/gold"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_surface"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="28dp"
+                android:paddingBottom="28dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🪙"
+                    android:textSize="52sp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/tvTodayReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 50"
+                    android:textColor="@color/gold"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Claim button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnClaim"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Claim Reward"
+                android:textColor="@color/gold"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_spin_now"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Countdown — visible only when already claimed -->
+            <LinearLayout
+                android:id="@+id/layoutCountdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/bg_surface"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEXT REWARD IN"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.12"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tvCountdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:textColor="@color/gold"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <!-- Total earned -->
+            <TextView
+                android:id="@+id/tvTotalRobux"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Earned: R$ 0"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

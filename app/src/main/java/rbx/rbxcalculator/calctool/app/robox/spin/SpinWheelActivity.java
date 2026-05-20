@@ -80,10 +80,14 @@ public class SpinWheelActivity extends AppCompatActivity {
                 String msg   = "🎉  You won " + prize + " Robux!";
                 tvResult.setText(msg);
 
+                // Add winnings to unified balance
+                try { MyApp.addToBalance(Long.parseLong(prize)); } catch (NumberFormatException ignored) {}
+
                 Log.d(TAG, "══════════════════════════════════════════");
                 Log.d(TAG, "🎉 SPIN RESULT");
-                Log.d(TAG, "  Prize  : " + prize + " Robux");
-                Log.d(TAG, "  Sector : " + sector);
+                Log.d(TAG, "  Prize   : " + prize + " Robux");
+                Log.d(TAG, "  Sector  : " + sector);
+                Log.d(TAG, "  Balance : R$" + MyApp.getBalance());
                 Log.d(TAG, "══════════════════════════════════════════");
 
                 MyApp.logEvent("spin_wheel_result", "prize", prize);

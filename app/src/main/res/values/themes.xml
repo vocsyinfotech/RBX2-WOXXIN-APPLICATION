@@ -33,4 +33,9 @@
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
+
+    <!-- Splash theme: pre-Android 12 fallback (sets windowBackground so first frame is on-brand) -->
+    <style name="Theme.RbxCalculator.Splash" parent="Theme.RbxCalculatorRoboxCounter">
+        <item name="android:windowBackground">@drawable/splash_gradient</item>
+    </style>
 </resources>

@@ -52,7 +52,7 @@
         android:debuggable="true"
         android:extractNativeLibs="false"
         android:icon="@mipmap/ic_launcher"
-        android:label="RbxCalculator"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
@@ -63,7 +63,8 @@
         <activity
             android:name="rbx.rbxcalculator.calctool.app.robox.SplashActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RbxCalculator.Splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -131,6 +132,10 @@
 
         <!-- Games & Features -->
         <activity
+            android:name="rbx.rbxcalculator.calctool.app.robox.daily.DailyRewardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="rbx.rbxcalculator.calctool.app.robox.tips.TipsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
@@ -152,6 +157,10 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="rbx.rbxcalculator.calctool.app.robox.meme.MemeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="rbx.rbxcalculator.calctool.app.robox.transfer.TransferActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 

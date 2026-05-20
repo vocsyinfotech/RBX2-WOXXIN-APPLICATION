@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Rbx Calculator : Robox Counter</string>
+    <string name="app_name">Coin Craft - RBX Calculator</string>
 
     <!-- Firebase / Google Services -->
     <string name="gcm_defaultSenderId" translatable="false">442589459945</string>

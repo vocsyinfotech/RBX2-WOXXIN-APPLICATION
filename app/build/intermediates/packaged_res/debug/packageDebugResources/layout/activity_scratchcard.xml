@@ -1,61 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/bg_primary">
 
+    <!-- Toolbar -->
     <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
         android:background="@color/bg_surface" android:orientation="horizontal"
         android:gravity="center_vertical" android:paddingHorizontal="8dp">
         <ImageButton android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_back_arrow" android:tint="@color/gold" android:contentDescription="Back"/>
-        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-            android:text="Scratch Card" android:textColor="@color/text_primary" android:textSize="18sp"
+            android:src="@drawable/ic_back_arrow" android:tint="@color/gold"
+            android:contentDescription="Back"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Scratch Card"
+            android:textColor="@color/text_primary" android:textSize="18sp"
             android:textStyle="bold" android:layout_marginStart="4dp"/>
     </LinearLayout>
 
-    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/bg_divider" />
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/bg_divider"/>
 
-    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
-        android:layout_weight="1" android:orientation="vertical" android:gravity="center"
-        android:padding="24dp">
+    <!-- Body -->
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:fillViewport="true">
 
-        <TextView android:id="@+id/tvScratchHint"
-            android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Scratch to reveal your prize!" android:textSize="15sp"
-            android:textColor="@color/text_secondary"
-            android:layout_marginBottom="28dp" android:gravity="center"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:gravity="center"
+            android:paddingHorizontal="20dp" android:paddingTop="24dp" android:paddingBottom="32dp">
 
-        <!-- Prize container with gold border -->
-        <FrameLayout android:layout_width="300dp" android:layout_height="170dp"
-            android:layout_gravity="center">
+            <!-- Subtitle -->
+            <TextView android:id="@+id/tvScratchHint"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Scratch the card to reveal your prize!"
+                android:textSize="14sp" android:textColor="@color/text_secondary"
+                android:gravity="center" android:layout_marginBottom="20dp"/>
 
-            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
-                android:background="@drawable/circle_gold_ring"
-                android:gravity="center"
-                android:orientation="vertical">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="🎁" android:textSize="52sp"/>
-                <TextView android:id="@+id/tvScratchPrize"
+            <!-- ══ LOTTERY TICKET CARD ══════════════════════════════════════ -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scratch_ticket_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Header band -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/scratch_ticket_header"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐  LUCKY ROBUX  ⭐"
+                            android:textColor="#FFD700"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.10"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="INSTANT WIN GAME"
+                            android:textColor="#88FFD700"
+                            android:textSize="9sp"
+                            android:letterSpacing="0.20"/>
+                    </LinearLayout>
+
+                    <!-- Gold hairline -->
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="#66FFD700"/>
+
+                    <!-- Prize reveal zone — ScratchView sits on top of the prize display -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="#08070000">
+
+                        <!-- Behind: the hidden prize -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="🪙"
+                                android:textSize="32sp"
+                                android:gravity="center"
+                                android:layout_marginBottom="2dp"/>
+
+                            <TextView
+                                android:id="@+id/tvPrizeAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                                android:textSize="56sp"
+                                android:textStyle="bold"
+                                android:textColor="#FFD700"
+                                android:gravity="center"
+                                android:alpha="0"/>
+
+                            <TextView
+                                android:id="@+id/tvPrizeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ROBUX"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:textColor="#AAAAAA"
+                                android:letterSpacing="0.20"
+                                android:gravity="center"
+                                android:alpha="0"/>
+                        </LinearLayout>
+
+                        <!-- Front: scratch overlay -->
+                        <rbx.rbxcalculator.calctool.app.robox.scratchcard.ScratchView
+                            android:id="@+id/scratchView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <!-- Gold hairline -->
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="#66FFD700"/>
+
+                    <!-- Footer band -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/scratch_ticket_footer"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WIN UP TO  R$ 500  ROBUX"
+                            android:textColor="#77FFD700"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.14"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+            <!-- ════════════════════════════════════════════════════════════ -->
+
+            <!-- Ticket number row (cosmetic) -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center"
+                android:layout_marginTop="8dp">
+                <TextView
                     android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="You won 100 Robux!" android:textSize="18sp"
-                    android:textStyle="bold" android:textColor="@color/gold"
-                    android:layout_marginTop="10dp" android:gravity="center"/>
+                    android:text="TICKET #"
+                    android:textColor="#33FFD700" android:textSize="10sp"/>
+                <TextView
+                    android:id="@+id/tvTicketNumber"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="000001"
+                    android:textColor="#33FFD700" android:textSize="10sp"
+                    android:fontFamily="monospace"/>
             </LinearLayout>
 
-            <rbx.rbxcalculator.calctool.app.robox.scratchcard.ScratchView
-                android:id="@+id/scratchView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-        </FrameLayout>
+            <!-- New Card button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNewCard"
+                android:layout_width="220dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="28dp"
+                android:text="New Card  🎴"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:background="@drawable/btn_gold_rounded"/>
 
-        <Button android:id="@+id/btnNewCard"
-            android:layout_width="200dp" android:layout_height="52dp"
-            android:layout_marginTop="36dp" android:text="New Card 🎴" android:textSize="14sp"
-            android:textStyle="bold" android:textColor="@color/text_on_gold"
-            android:backgroundTint="@color/gold" app:cornerRadius="26dp"/>
-    </LinearLayout>
+            <!-- Balance note -->
+            <TextView
+                android:id="@+id/tvWonNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text=""
+                android:textSize="13sp"
+                android:textColor="@color/gold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

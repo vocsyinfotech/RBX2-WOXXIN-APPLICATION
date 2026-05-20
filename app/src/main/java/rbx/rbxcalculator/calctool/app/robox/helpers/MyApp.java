@@ -56,6 +56,30 @@ public class MyApp extends Application {
         Log.d(TAG, "✅ SharedPreferences initialized");
     }
 
+    public static final String KEY_TOTAL_BALANCE = "total_balance";
+
+    /** Add Robux to the unified balance (shared across all modules). */
+    public static void addToBalance(long amount) {
+        if (prefs == null || amount <= 0) return;
+        long current = prefs.getLong(KEY_TOTAL_BALANCE, 0);
+        prefs.edit().putLong(KEY_TOTAL_BALANCE, current + amount).apply();
+        Log.d(TAG, "💰 Balance +R$" + amount + " → total R$" + (current + amount));
+    }
+
+    /** Current unified Robux balance. */
+    public static long getBalance() {
+        return prefs != null ? prefs.getLong(KEY_TOTAL_BALANCE, 0) : 0;
+    }
+
+    /** Deduct Robux from the unified balance (used by transfer flow). */
+    public static void deductFromBalance(long amount) {
+        if (prefs == null || amount <= 0) return;
+        long current = prefs.getLong(KEY_TOTAL_BALANCE, 0);
+        long newBalance = Math.max(0, current - amount);
+        prefs.edit().putLong(KEY_TOTAL_BALANCE, newBalance).apply();
+        Log.d(TAG, "💸 Balance -R$" + amount + " → total R$" + newBalance);
+    }
+
     public static FirebaseAnalytics getAnalytics() {
         return analytics;
     }

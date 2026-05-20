@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:2:1-117:12
-INJECTED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:2:1-117:12
-INJECTED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:2:1-117:12
-INJECTED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:2:1-117:12
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:2:1-120:12
+INJECTED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:2:1-120:12
+INJECTED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:2:1-120:12
+INJECTED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:2:1-120:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Jay\.gradle\caches\transforms-4\9f06a2b80b25764227dc100144d8388a\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Jay\.gradle\caches\transforms-4\b5993a7aacab0d0f8000640f4a29c829\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.airbnb.android:lottie:6.5.2] C:\Users\Jay\.gradle\caches\transforms-4\e192ada8d573cd1cf0248c8fcf13f650\transformed\jetified-lottie-6.5.2\AndroidManifest.xml:2:1-9:12
@@ -208,8 +208,8 @@ ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xm
 	android:scheme
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:18:19-41
 application
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:22:5-116:19
-INJECTED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:22:5-116:19
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:22:5-119:19
+INJECTED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:22:5-119:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Jay\.gradle\caches\transforms-4\9f06a2b80b25764227dc100144d8388a\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Jay\.gradle\caches\transforms-4\9f06a2b80b25764227dc100144d8388a\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Jay\.gradle\caches\transforms-4\b5993a7aacab0d0f8000640f4a29c829\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -287,7 +287,7 @@ MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\Jay\.gradle\caches\trans
 	android:supportsRtl
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:28:9-35
 	android:label
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:27:9-38
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:27:9-41
 	android:roundIcon
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:26:9-54
 	android:icon
@@ -301,72 +301,66 @@ MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\Jay\.gradle\caches\trans
 	android:name
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:23:9-38
 activity#rbx.rbxcalculator.calctool.app.robox.SplashActivity
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:33:9-41:20
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:33:9-42:20
 	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:36:13-49
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:37:13-49
 	android:exported
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:35:13-36
+	android:theme
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:36:13-62
 	android:name
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:34:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:37:13-40:29
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:38:13-41:29
 action#android.intent.action.MAIN
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:38:17-69
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:38:25-66
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:39:17-77
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:39:27-74
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:40:27-74
 activity#rbx.rbxcalculator.calctool.app.robox.ActivityStart
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:44:9-123
-	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:44:84-120
-	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:44:59-83
-	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:44:19-48
-activity#rbx.rbxcalculator.calctool.app.robox.MainActivity
 ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:45:9-123
 	android:screenOrientation
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:45:84-120
 	android:exported
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:45:59-83
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:45:19-47
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:45:19-48
+activity#rbx.rbxcalculator.calctool.app.robox.MainActivity
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:46:9-123
+	android:screenOrientation
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:46:84-120
+	android:exported
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:46:59-83
+	android:name
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:46:19-47
 activity#rbx.rbxcalculator.calctool.app.robox.AllRbxCalculatorActivity
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:46:9-124
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:47:9-124
 	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:46:85-121
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:47:85-121
 	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:46:60-84
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:47:60-84
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:46:19-59
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:47:19-59
 activity#rbx.rbxcalculator.calctool.app.robox.SettingActivity
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:47:9-123
-	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:47:84-120
-	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:47:59-83
-	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:47:19-50
-activity#rbx.rbxcalculator.calctool.app.robox.ExitScreen
 ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:48:9-123
 	android:screenOrientation
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:48:84-120
 	android:exported
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:48:59-83
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:48:19-45
-activity#rbx.rbxcalculator.calctool.app.robox.allcalc.RbxToUsdActivity
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:51:9-127
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:48:19-50
+activity#rbx.rbxcalculator.calctool.app.robox.ExitScreen
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:49:9-123
 	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:51:88-124
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:49:84-120
 	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:51:63-87
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:49:59-83
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:51:19-59
-activity#rbx.rbxcalculator.calctool.app.robox.allcalc.UsdToRbxActivity
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:49:19-45
+activity#rbx.rbxcalculator.calctool.app.robox.allcalc.RbxToUsdActivity
 ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:52:9-127
 	android:screenOrientation
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:52:88-124
@@ -374,15 +368,15 @@ ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xm
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:52:63-87
 	android:name
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:52:19-59
-activity#rbx.rbxcalculator.calctool.app.robox.allcalc.RbxToDollarActivity
+activity#rbx.rbxcalculator.calctool.app.robox.allcalc.UsdToRbxActivity
 ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:53:9-127
 	android:screenOrientation
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:53:88-124
 	android:exported
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:53:63-87
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:53:19-62
-activity#rbx.rbxcalculator.calctool.app.robox.allcalc.DollarToRbxActivity
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:53:19-59
+activity#rbx.rbxcalculator.calctool.app.robox.allcalc.RbxToDollarActivity
 ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:54:9-127
 	android:screenOrientation
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:54:88-124
@@ -390,31 +384,31 @@ ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xm
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:54:63-87
 	android:name
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:54:19-62
-activity#rbx.rbxcalculator.calctool.app.robox.membership.MembershipCalculator
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:57:9-131
+activity#rbx.rbxcalculator.calctool.app.robox.allcalc.DollarToRbxActivity
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:55:9-127
 	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:57:92-128
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:55:88-124
 	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:57:67-91
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:55:63-87
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:57:19-66
-activity#rbx.rbxcalculator.calctool.app.robox.membership.BcToRbxActivity
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:55:19-62
+activity#rbx.rbxcalculator.calctool.app.robox.membership.MembershipCalculator
 ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:58:9-131
 	android:screenOrientation
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:58:92-128
 	android:exported
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:58:67-91
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:58:19-61
-activity#rbx.rbxcalculator.calctool.app.robox.membership.ObcToRbxActivity
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:58:19-66
+activity#rbx.rbxcalculator.calctool.app.robox.membership.BcToRbxActivity
 ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:59:9-131
 	android:screenOrientation
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:59:92-128
 	android:exported
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:59:67-91
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:59:19-62
-activity#rbx.rbxcalculator.calctool.app.robox.membership.TbcToUsdActivity
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:59:19-61
+activity#rbx.rbxcalculator.calctool.app.robox.membership.ObcToRbxActivity
 ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:60:9-131
 	android:screenOrientation
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:60:92-128
@@ -422,114 +416,138 @@ ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xm
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:60:67-91
 	android:name
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:60:19-62
+activity#rbx.rbxcalculator.calctool.app.robox.membership.TbcToUsdActivity
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:61:9-131
+	android:screenOrientation
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:61:92-128
+	android:exported
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:61:67-91
+	android:name
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:61:19-62
+activity#rbx.rbxcalculator.calctool.app.robox.daily.DailyRewardActivity
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:64:9-129
+	android:screenOrientation
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:64:90-126
+	android:exported
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:64:65-89
+	android:name
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:64:19-60
 activity#rbx.rbxcalculator.calctool.app.robox.tips.TipsActivity
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:63:9-129
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:65:9-129
 	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:63:90-126
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:65:90-126
 	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:63:65-89
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:65:65-89
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:63:19-52
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:65:19-52
 activity#rbx.rbxcalculator.calctool.app.robox.tips.TipsDetailsActivity
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:64:9-130
-	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:64:91-127
-	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:64:66-90
-	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:64:19-59
-activity#rbx.rbxcalculator.calctool.app.robox.spin.SpinWheelActivity
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:65:9-130
-	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:65:91-127
-	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:65:66-90
-	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:65:19-57
-activity#rbx.rbxcalculator.calctool.app.robox.quiz.QuizTimeActivity
 ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:66:9-130
 	android:screenOrientation
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:66:91-127
 	android:exported
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:66:66-90
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:66:19-56
-activity#rbx.rbxcalculator.calctool.app.robox.scratchcard.ScratchcardActivity
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:67:9-131
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:66:19-59
+activity#rbx.rbxcalculator.calctool.app.robox.spin.SpinWheelActivity
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:67:9-130
 	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:67:92-128
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:67:91-127
 	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:67:67-91
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:67:66-90
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:67:19-66
-activity#rbx.rbxcalculator.calctool.app.robox.meme.MemeActivity
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:67:19-57
+activity#rbx.rbxcalculator.calctool.app.robox.quiz.QuizTimeActivity
 ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:68:9-130
 	android:screenOrientation
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:68:91-127
 	android:exported
 		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:68:66-90
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:68:19-52
-activity#rbx.rbxcalculator.calctool.app.robox.postcall.ActivityPostCallForAd
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:71:9-77:49
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:68:19-56
+activity#rbx.rbxcalculator.calctool.app.robox.scratchcard.ScratchcardActivity
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:69:9-131
 	android:screenOrientation
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:74:13-49
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:69:92-128
+	android:exported
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:69:67-91
+	android:name
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:69:19-66
+activity#rbx.rbxcalculator.calctool.app.robox.meme.MemeActivity
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:70:9-130
+	android:screenOrientation
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:70:91-127
+	android:exported
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:70:66-90
+	android:name
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:70:19-52
+activity#rbx.rbxcalculator.calctool.app.robox.transfer.TransferActivity
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:71:9-130
+	android:screenOrientation
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:71:91-127
+	android:exported
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:71:66-90
+	android:name
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:71:19-60
+activity#rbx.rbxcalculator.calctool.app.robox.postcall.ActivityPostCallForAd
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:74:9-80:49
+	android:screenOrientation
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:77:13-49
 	android:excludeFromRecents
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:76:13-46
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:79:13-46
 	android:launchMode
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:75:13-44
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:78:13-44
 	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:73:13-37
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:76:13-37
 	android:finishOnTaskLaunch
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:77:13-46
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:80:13-46
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:72:13-59
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:75:13-59
 receiver#rbx.rbxcalculator.calctool.app.robox.postcall.CallStateReceiver
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:79:9-85:20
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:82:9-88:20
 	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:81:13-36
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:84:13-36
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:80:13-55
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:83:13-55
 intent-filter#action:name:android.intent.action.PHONE_STATE
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:82:13-84:29
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:85:13-87:29
 action#android.intent.action.PHONE_STATE
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:83:17-76
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:86:17-76
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:83:25-73
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:86:25-73
 meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:88:9-90:70
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:91:9-93:70
 	android:value
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:90:13-67
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:93:13-67
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:89:13-69
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:92:13-69
 property#android.adservices.AD_SERVICES_CONFIG
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:92:9-95:48
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:95:9-98:48
 MERGED from [com.google.android.gms:play-services-ads-lite:23.3.0] C:\Users\Jay\.gradle\caches\transforms-4\955da1cc5ebae1fb5ffd3cc7e333a7e3\transformed\jetified-play-services-ads-lite-23.3.0\AndroidManifest.xml:90:9-92:62
 MERGED from [com.google.android.gms:play-services-ads-lite:23.3.0] C:\Users\Jay\.gradle\caches\transforms-4\955da1cc5ebae1fb5ffd3cc7e333a7e3\transformed\jetified-play-services-ads-lite-23.3.0\AndroidManifest.xml:90:9-92:62
 MERGED from [com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\Jay\.gradle\caches\transforms-4\9d22460e651c349fcc6537f198807f5c\transformed\jetified-play-services-measurement-api-22.1.2\AndroidManifest.xml:30:9-32:61
 MERGED from [com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\Jay\.gradle\caches\transforms-4\9d22460e651c349fcc6537f198807f5c\transformed\jetified-play-services-measurement-api-22.1.2\AndroidManifest.xml:30:9-32:61
 	android:resource
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:94:13-59
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:97:13-59
 		REJECTED from [com.google.android.gms:play-services-ads-lite:23.3.0] C:\Users\Jay\.gradle\caches\transforms-4\955da1cc5ebae1fb5ffd3cc7e333a7e3\transformed\jetified-play-services-ads-lite-23.3.0\AndroidManifest.xml:92:13-59
 		REJECTED from [com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\Jay\.gradle\caches\transforms-4\9d22460e651c349fcc6537f198807f5c\transformed\jetified-play-services-measurement-api-22.1.2\AndroidManifest.xml:32:13-58
 	tools:replace
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:95:13-45
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:98:13-45
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:93:13-65
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:96:13-65
 service#rbx.rbxcalculator.calctool.app.robox.helpers.RbxFirebaseMessagingService
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:98:9-104:19
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:101:9-107:19
 	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:100:13-37
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:103:13-37
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:99:13-64
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:102:13-64
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:101:13-103:29
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:104:13-106:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:102:17-78
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:105:17-78
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:102:25-75
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:105:25-75
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:107:9-114:19
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:110:9-117:19
 MERGED from [com.google.firebase:firebase-messaging:24.0.2] C:\Users\Jay\.gradle\caches\transforms-4\cb546133845d86322f189fdca636dc4b\transformed\jetified-firebase-messaging-24.0.2\AndroidManifest.xml:54:9-63:19
 MERGED from [com.google.firebase:firebase-messaging:24.0.2] C:\Users\Jay\.gradle\caches\transforms-4\cb546133845d86322f189fdca636dc4b\transformed\jetified-firebase-messaging-24.0.2\AndroidManifest.xml:54:9-63:19
 MERGED from [com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\Jay\.gradle\caches\transforms-4\9d22460e651c349fcc6537f198807f5c\transformed\jetified-play-services-measurement-api-22.1.2\AndroidManifest.xml:34:9-40:19
@@ -543,21 +561,21 @@ MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\Jay\.gradle\ca
 MERGED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Jay\.gradle\caches\transforms-4\a32d5e011ac6f9c74b6bc58f57c2bdcc\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:22:9-28:19
 MERGED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Jay\.gradle\caches\transforms-4\a32d5e011ac6f9c74b6bc58f57c2bdcc\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:22:9-28:19
 	android:exported
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:109:13-37
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:112:13-37
 	tools:targetApi
 		ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\Jay\.gradle\caches\transforms-4\11491fdb6b5c2a410a012489c52c35e2\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:34:13-32
 	android:directBootAware
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:110:13-43
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:113:13-43
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:108:13-84
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:111:13-84
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
-ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:111:13-113:85
+ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:114:13-116:85
 MERGED from [com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\Jay\.gradle\caches\transforms-4\9d22460e651c349fcc6537f198807f5c\transformed\jetified-play-services-measurement-api-22.1.2\AndroidManifest.xml:37:13-39:85
 MERGED from [com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\Jay\.gradle\caches\transforms-4\9d22460e651c349fcc6537f198807f5c\transformed\jetified-play-services-measurement-api-22.1.2\AndroidManifest.xml:37:13-39:85
 	android:value
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:113:17-82
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:116:17-82
 	android:name
-		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:112:17-139
+		ADDED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml:115:17-139
 uses-sdk
 INJECTED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\android\woxxin\WRBX1\RbxCalculator\app\src\main\AndroidManifest.xml

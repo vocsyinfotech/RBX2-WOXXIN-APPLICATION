@@ -1,58 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/bg_primary"
-    android:gravity="center">
+    android:background="@drawable/splash_gradient"
+    android:fitsSystemWindows="true">
 
-    <!-- Logo container with gold ring -->
+    <!-- HERO: hex coin + character stacked at center -->
     <FrameLayout
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center">
 
-        <View
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:background="@drawable/circle_gold_ring" />
-
+        <!-- Hex coin backdrop -->
         <ImageView
-            android:id="@+id/ivSplashLogo"
-            android:layout_width="116dp"
-            android:layout_height="116dp"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
             android:layout_gravity="center"
-            android:src="@mipmap/ic_launcher"
-            android:contentDescription="Logo" />
+            android:src="@drawable/splash_coin"
+            android:alpha="0.9"
+            android:importantForAccessibility="no" />
+
+        <!-- Character mascot (hero) -->
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="408dp"
+            android:layout_gravity="center"
+            android:src="@drawable/splash_character"
+            android:contentDescription="Coin Craft mascot"
+            android:adjustViewBounds="true" />
     </FrameLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- TOP: title block -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/app_name"
-        android:textColor="@color/text_primary"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:letterSpacing="0.02" />
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="72dp"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coin Craft"
+            android:textColor="@color/gold"
+            android:textSize="52sp"
+            android:textStyle="bold"
+            android:letterSpacing="-0.02"
+            android:shadowColor="@color/gold_20"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="RBX CALCULATOR"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:letterSpacing="0.28" />
+    </LinearLayout>
+
+    <!-- BOTTOM: tagline + spinner -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/subtext"
-        android:textColor="@color/gold"
-        android:textSize="13sp"
-        android:gravity="center"
-        android:letterSpacing="0.05"
-        android:paddingHorizontal="32dp" />
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="64dp"
-        android:indeterminateTint="@color/gold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play · Win · Earn RBX Daily"
+            android:textColor="@color/gold"
+            android:textSize="14sp"
+            android:letterSpacing="0.12" />
 
-</LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:indeterminateTint="@color/gold" />
+    </LinearLayout>
+
+</FrameLayout>

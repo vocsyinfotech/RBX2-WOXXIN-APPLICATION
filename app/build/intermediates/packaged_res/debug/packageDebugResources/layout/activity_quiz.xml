@@ -36,8 +36,9 @@
     <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
         android:layout_weight="1" android:orientation="vertical" android:padding="16dp">
 
-        <!-- Question card -->
+        <!-- Question card (hidden on completion) -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardQuestion"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:layout_marginBottom="20dp" app:cardCornerRadius="20dp" app:cardElevation="0dp"
             app:cardBackgroundColor="@color/bg_surface">
@@ -49,7 +50,73 @@
                 android:lineSpacingMultiplier="1.4"/>
         </androidx.cardview.widget.CardView>
 
-        <!-- Answer buttons — alternating gold / surface for visual rhythm -->
+        <!-- Result card (shown only on completion) -->
+        <LinearLayout
+            android:id="@+id/layoutResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/bg_surface"
+            android:paddingTop="36dp"
+            android:paddingBottom="36dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏆"
+                android:textSize="56sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvResultTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz Complete!"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tvResultScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score: 0 / 10"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:background="@color/bg_divider"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOU EARNED"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tvResultEarned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 0"
+                android:textColor="@color/gold"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Answer buttons -->
         <Button android:id="@+id/btnOpt1" android:layout_width="match_parent" android:layout_height="52dp"
             android:layout_marginBottom="10dp" android:text="Option A" android:textSize="14sp"
             android:textStyle="bold" android:textColor="@color/text_on_gold"

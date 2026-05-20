@@ -24,7 +24,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:label="RbxCalculator"
+        android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.RbxCalculatorRoboxCounter"
         android:usesCleartextTraffic="true">
@@ -33,6 +33,7 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true"
+            android:theme="@style/Theme.RbxCalculator.Splash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,12 +61,14 @@
         <activity android:name=".membership.TbcToUsdActivity"     android:exported="false" android:screenOrientation="portrait" />
 
         <!-- Games & Features -->
+        <activity android:name=".daily.DailyRewardActivity"     android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".tips.TipsActivity"             android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".tips.TipsDetailsActivity"       android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".spin.SpinWheelActivity"         android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".quiz.QuizTimeActivity"          android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".scratchcard.ScratchcardActivity" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".meme.MemeActivity"              android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".transfer.TransferActivity"      android:exported="false" android:screenOrientation="portrait" />
 
         <!-- Post-call ad -->
         <activity

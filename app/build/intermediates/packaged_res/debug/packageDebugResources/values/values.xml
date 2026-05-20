@@ -92,7 +92,7 @@
     <dimen name="width_25dp">25dp</dimen>
     <dimen name="width_35dp">35dp</dimen>
     <dimen name="width_60dp">60dp</dimen>
-    <string name="app_name">Rbx Calculator : Robox Counter</string>
+    <string name="app_name">Coin Craft - RBX Calculator</string>
     <string name="back">Back</string>
     <string name="calculate">Calculate</string>
     <string name="enter_amount">Enter Amount</string>
@@ -163,6 +163,9 @@
     <string name="todo" translatable="false">Back</string>
     <string name="usd">USD</string>
     <string name="watch_this_space_to_get_latest_updates" translatable="false">Watch this space to get latest updates</string>
+    <style name="Theme.RbxCalculator.Splash" parent="Theme.RbxCalculatorRoboxCounter">
+        <item name="android:windowBackground">@drawable/splash_gradient</item>
+    </style>
     <style name="Theme.RbxCalculatorRoboxCounter" parent="Theme.MaterialComponents.NoActionBar">
         
         <item name="colorPrimary">@color/gold</item>

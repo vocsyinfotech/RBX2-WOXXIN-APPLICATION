@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_primary">
+
+    <!-- ── Toolbar ─────────────────────────────────────────────────────────── -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+        android:background="@color/bg_surface" android:orientation="horizontal"
+        android:gravity="center_vertical" android:paddingHorizontal="8dp">
+        <ImageButton android:id="@+id/btnBack"
+            android:layout_width="48dp" android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back_arrow" android:tint="@color/gold"
+            android:contentDescription="Back"/>
+        <TextView android:id="@+id/tvToolbarTitle"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Transfer Robux"
+            android:textColor="@color/text_primary" android:textSize="18sp"
+            android:textStyle="bold" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/bg_divider"/>
+
+    <!-- ── Step indicator ──────────────────────────────────────────────────── -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="38dp"
+        android:background="@color/bg_surface" android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+        <TextView android:id="@+id/tvStepIndicator"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Step 1 of 4  —  Enter Username"
+            android:textColor="@color/text_secondary" android:textSize="12sp"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/bg_divider"/>
+
+    <!-- ── Scrollable content ──────────────────────────────────────────────── -->
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:fillViewport="true">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ════════════════════════════════════════════════════════════ -->
+            <!--  STEP 1 — Username                                          -->
+            <!-- ════════════════════════════════════════════════════════════ -->
+            <LinearLayout android:id="@+id/layoutStep1"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:gravity="center"
+                        android:padding="28dp">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🎮" android:textSize="48sp" android:gravity="center"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Available Balance" android:textColor="@color/text_secondary"
+                            android:textSize="12sp" android:gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView android:id="@+id/tvStep1Balance"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="R$ 0" android:textColor="@color/gold"
+                            android:textSize="40sp" android:textStyle="bold"
+                            android:gravity="center" android:layout_marginTop="4dp"/>
+
+                        <View android:layout_width="60dp" android:layout_height="1dp"
+                            android:background="@color/bg_divider" android:layout_marginVertical="20dp"/>
+
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="Enter your Roblox username"
+                            android:textColor="@color/text_primary" android:textSize="14sp"
+                            android:textStyle="bold" android:layout_marginBottom="12dp"/>
+
+                        <EditText android:id="@+id/etUsername"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:hint="e.g. RobloxPlayer123"
+                            android:background="@drawable/edit_text_bg"
+                            android:paddingHorizontal="16dp" android:paddingVertical="14dp"
+                            android:textColor="@color/text_primary"
+                            android:textColorHint="@color/text_secondary"
+                            android:textSize="15sp" android:singleLine="true"
+                            android:imeOptions="actionDone"
+                            android:inputType="textNoSuggestions"/>
+
+                        <TextView android:id="@+id/tvStep1LowBalance"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="⚠  Earn at least R$ 100 before transferring"
+                            android:textColor="#FF6B6B" android:textSize="12sp"
+                            android:layout_marginTop="10dp" android:visibility="gone"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnFindAccount"
+                            android:layout_width="match_parent" android:layout_height="52dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Find Roblox Account  →"
+                            android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:background="@drawable/btn_gold_rounded"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="This is a fun simulation. Robux displayed are in-app reward points."
+                    android:textColor="@color/text_secondary" android:textSize="11sp"
+                    android:gravity="center" android:layout_marginTop="14dp"/>
+
+            </LinearLayout>
+
+            <!-- ════════════════════════════════════════════════════════════ -->
+            <!--  STEP 2 — Account Found + Amount                            -->
+            <!-- ════════════════════════════════════════════════════════════ -->
+            <LinearLayout android:id="@+id/layoutStep2"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp"
+                android:visibility="gone">
+
+                <!-- Account verified banner -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:background="#0D200D" android:padding="16dp"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView android:id="@+id/tvAvatarInitial"
+                        android:layout_width="48dp" android:layout_height="48dp"
+                        android:gravity="center" android:textSize="20sp"
+                        android:textStyle="bold" android:textColor="#000000"
+                        android:text="R"/>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+                        <TextView android:id="@+id/tvFoundUsername"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@Username" android:textColor="@color/gold"
+                            android:textSize="16sp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="✓  Account Verified" android:textColor="#4CAF50"
+                            android:textSize="12sp" android:layout_marginTop="2dp"/>
+                    </LinearLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="✓" android:textColor="#4CAF50"
+                        android:textSize="24sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Amount chips -->
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Choose Transfer Amount"
+                    android:textColor="@color/text_primary" android:textSize="15sp"
+                    android:textStyle="bold" android:layout_marginBottom="12dp"/>
+
+                <LinearLayout android:id="@+id/chipRowAmount"
+                    android:layout_width="match_parent" android:layout_height="44dp"
+                    android:orientation="horizontal"/>
+
+                <!-- OR divider -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:layout_marginVertical="16dp">
+                    <View android:layout_width="0dp" android:layout_height="1dp"
+                        android:layout_weight="1" android:background="@color/bg_divider"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="  OR  " android:textColor="@color/text_secondary"
+                        android:textSize="12sp"/>
+                    <View android:layout_width="0dp" android:layout_height="1dp"
+                        android:layout_weight="1" android:background="@color/bg_divider"/>
+                </LinearLayout>
+
+                <!-- Custom amount input -->
+                <EditText android:id="@+id/etCustomAmount"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="Custom amount  (min R$ 100)"
+                    android:background="@drawable/edit_text_bg"
+                    android:paddingHorizontal="16dp" android:paddingVertical="14dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_secondary"
+                    android:textSize="15sp" android:inputType="number"
+                    android:imeOptions="actionDone"/>
+
+                <TextView android:id="@+id/tvStep2Note"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Balance: R$ 0  •  Min transfer: R$ 100"
+                    android:textColor="@color/text_secondary" android:textSize="11sp"
+                    android:layout_marginTop="8dp"/>
+
+                <!-- Navigation buttons -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginTop="28dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnStep2Back"
+                        android:layout_width="0dp" android:layout_height="52dp"
+                        android:layout_weight="1" android:layout_marginEnd="8dp"
+                        android:text="← Back" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="@color/text_primary"
+                        android:background="@color/bg_surface"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnStep2Next"
+                        android:layout_width="0dp" android:layout_height="52dp"
+                        android:layout_weight="2"
+                        android:text="Continue →" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:background="@drawable/btn_gold_rounded"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ════════════════════════════════════════════════════════════ -->
+            <!--  STEP 3 — Confirm                                           -->
+            <!-- ════════════════════════════════════════════════════════════ -->
+            <LinearLayout android:id="@+id/layoutStep3"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp"
+                android:visibility="gone">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Review Your Transfer"
+                    android:textColor="@color/gold" android:textSize="18sp"
+                    android:textStyle="bold" android:layout_marginBottom="20dp"/>
+
+                <!-- Summary card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- FROM -->
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical"
+                            android:padding="18dp">
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="FROM" android:textColor="@color/text_secondary"
+                                    android:textSize="9sp" android:letterSpacing="0.14"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="Your Wallet" android:textColor="@color/text_primary"
+                                    android:textSize="15sp" android:textStyle="bold"
+                                    android:layout_marginTop="3dp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="🪙" android:textSize="22sp"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:background="@color/bg_divider"/>
+
+                        <!-- TO -->
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical"
+                            android:padding="18dp">
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="TO" android:textColor="@color/text_secondary"
+                                    android:textSize="9sp" android:letterSpacing="0.14"/>
+                                <TextView android:id="@+id/tvConfirmUser"
+                                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="@Username" android:textColor="@color/text_primary"
+                                    android:textSize="15sp" android:textStyle="bold"
+                                    android:layout_marginTop="3dp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="👤" android:textSize="22sp"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:background="@color/bg_divider"/>
+
+                        <!-- AMOUNT — gold highlight row -->
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical"
+                            android:background="#0DFFD700" android:padding="18dp">
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="AMOUNT" android:textColor="@color/text_secondary"
+                                    android:textSize="9sp" android:letterSpacing="0.14"/>
+                                <TextView android:id="@+id/tvConfirmAmount"
+                                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="R$ 0" android:textColor="@color/gold"
+                                    android:textSize="32sp" android:textStyle="bold"
+                                    android:layout_marginTop="3dp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="💸" android:textSize="28sp"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:background="@color/bg_divider"/>
+
+                        <!-- REMAINING -->
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical"
+                            android:padding="18dp">
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="BALANCE AFTER TRANSFER"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="9sp" android:letterSpacing="0.14"/>
+                                <TextView android:id="@+id/tvConfirmBalance"
+                                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="R$ 0 remaining"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="14sp" android:textStyle="bold"
+                                    android:layout_marginTop="3dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Security badge -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center"
+                    android:layout_marginTop="18dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🔒" android:textSize="14sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="  Secured and processed instantly"
+                        android:textColor="@color/text_secondary" android:textSize="12sp"/>
+                </LinearLayout>
+
+                <!-- Navigation buttons -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginTop="28dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnStep3Back"
+                        android:layout_width="0dp" android:layout_height="52dp"
+                        android:layout_weight="1" android:layout_marginEnd="8dp"
+                        android:text="← Back" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="@color/text_primary"
+                        android:background="@color/bg_surface"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnConfirmTransfer"
+                        android:layout_width="0dp" android:layout_height="52dp"
+                        android:layout_weight="2"
+                        android:text="Confirm Transfer  🚀"
+                        android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:background="@drawable/btn_gold_rounded"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ════════════════════════════════════════════════════════════ -->
+            <!--  STEP 4 — Processing                                        -->
+            <!-- ════════════════════════════════════════════════════════════ -->
+            <LinearLayout android:id="@+id/layoutStep4"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:gravity="center"
+                android:padding="20dp" android:visibility="gone">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🚀" android:textSize="56sp" android:gravity="center"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Transferring" android:textColor="@color/text_secondary"
+                    android:textSize="14sp" android:gravity="center" android:layout_marginTop="14dp"/>
+
+                <TextView android:id="@+id/tvProcessingAmount"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 0" android:textColor="@color/gold"
+                    android:textSize="42sp" android:textStyle="bold"
+                    android:gravity="center" android:layout_marginTop="4dp"/>
+
+                <TextView android:id="@+id/tvProcessingTo"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="to @username" android:textColor="@color/text_secondary"
+                    android:textSize="14sp" android:gravity="center"
+                    android:layout_marginTop="2dp" android:layout_marginBottom="24dp"/>
+
+                <!-- Progress bar -->
+                <ProgressBar android:id="@+id/transferProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent" android:layout_height="6dp"
+                    android:max="100" android:progress="0"
+                    android:progressTint="@color/gold"
+                    android:progressBackgroundTint="@color/bg_divider"
+                    android:layout_marginBottom="28dp"/>
+
+                <!-- Processing steps card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="20dp">
+
+                        <LinearLayout android:id="@+id/processRow1"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical"
+                            android:layout_marginBottom="14dp" android:alpha="0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="●" android:textColor="@color/gold" android:textSize="10sp"/>
+                            <TextView android:id="@+id/processLabel1"
+                                android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginHorizontal="12dp"
+                                android:text="Connecting to Roblox servers..."
+                                android:textColor="@color/text_secondary" android:textSize="14sp"/>
+                            <TextView android:id="@+id/check1"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="✓" android:textColor="@color/gold"
+                                android:textSize="18sp" android:textStyle="bold"
+                                android:visibility="invisible"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:id="@+id/processRow2"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical"
+                            android:layout_marginBottom="14dp" android:alpha="0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="●" android:textColor="@color/gold" android:textSize="10sp"/>
+                            <TextView android:id="@+id/processLabel2"
+                                android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginHorizontal="12dp"
+                                android:text="Verifying account..."
+                                android:textColor="@color/text_secondary" android:textSize="14sp"/>
+                            <TextView android:id="@+id/check2"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="✓" android:textColor="@color/gold"
+                                android:textSize="18sp" android:textStyle="bold"
+                                android:visibility="invisible"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:id="@+id/processRow3"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical"
+                            android:layout_marginBottom="14dp" android:alpha="0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="●" android:textColor="@color/gold" android:textSize="10sp"/>
+                            <TextView android:id="@+id/processLabel3"
+                                android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginHorizontal="12dp"
+                                android:text="Securing transfer channel..."
+                                android:textColor="@color/text_secondary" android:textSize="14sp"/>
+                            <TextView android:id="@+id/check3"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="✓" android:textColor="@color/gold"
+                                android:textSize="18sp" android:textStyle="bold"
+                                android:visibility="invisible"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:id="@+id/processRow4"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical"
+                            android:layout_marginBottom="14dp" android:alpha="0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="●" android:textColor="@color/gold" android:textSize="10sp"/>
+                            <TextView android:id="@+id/processLabel4"
+                                android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginHorizontal="12dp"
+                                android:text="Processing transfer..."
+                                android:textColor="@color/text_secondary" android:textSize="14sp"/>
+                            <TextView android:id="@+id/check4"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="✓" android:textColor="@color/gold"
+                                android:textSize="18sp" android:textStyle="bold"
+                                android:visibility="invisible"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:id="@+id/processRow5"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical"
+                            android:alpha="0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="●" android:textColor="@color/gold" android:textSize="10sp"/>
+                            <TextView android:id="@+id/processLabel5"
+                                android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:layout_marginHorizontal="12dp"
+                                android:text="Finalising transaction..."
+                                android:textColor="@color/text_secondary" android:textSize="14sp"/>
+                            <TextView android:id="@+id/check5"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="✓" android:textColor="@color/gold"
+                                android:textSize="18sp" android:textStyle="bold"
+                                android:visibility="invisible"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- ════════════════════════════════════════════════════════════ -->
+            <!--  SUCCESS                                                     -->
+            <!-- ════════════════════════════════════════════════════════════ -->
+            <LinearLayout android:id="@+id/layoutSuccess"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:gravity="center"
+                android:padding="20dp" android:visibility="gone">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🎉" android:textSize="68sp" android:gravity="center"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Transfer Successful!"
+                    android:textColor="@color/gold" android:textSize="22sp"
+                    android:textStyle="bold" android:gravity="center"
+                    android:layout_marginTop="14dp"/>
+
+                <TextView android:id="@+id/tvSuccessAmount"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 0" android:textColor="@color/gold"
+                    android:textSize="52sp" android:textStyle="bold"
+                    android:gravity="center" android:layout_marginTop="10dp"
+                    android:alpha="0"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ROBUX" android:textColor="@color/text_secondary"
+                    android:textSize="13sp" android:textStyle="bold"
+                    android:letterSpacing="0.20" android:gravity="center"/>
+
+                <TextView android:id="@+id/tvSuccessUser"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="sent to @username"
+                    android:textColor="@color/text_secondary" android:textSize="15sp"
+                    android:gravity="center" android:layout_marginTop="10dp"/>
+
+                <!-- Transaction details card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/bg_surface"
+                    android:layout_marginTop="28dp">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="20dp">
+
+                        <!-- Transaction ref -->
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical">
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="TRANSACTION REFERENCE"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="9sp" android:letterSpacing="0.14"/>
+                                <TextView android:id="@+id/tvSuccessTxId"
+                                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="TXN#XXXXX-XXXXX"
+                                    android:textColor="@color/gold" android:textSize="13sp"
+                                    android:textStyle="bold" android:fontFamily="monospace"
+                                    android:layout_marginTop="4dp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="📋" android:textSize="18sp"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:background="@color/bg_divider" android:layout_marginVertical="14dp"/>
+
+                        <!-- Remaining balance -->
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:gravity="center_vertical">
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="REMAINING BALANCE"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="9sp" android:letterSpacing="0.14"/>
+                                <TextView android:id="@+id/tvSuccessBalance"
+                                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="R$ 0"
+                                    android:textColor="@color/text_primary" android:textSize="15sp"
+                                    android:textStyle="bold" android:layout_marginTop="4dp"/>
+                            </LinearLayout>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="🪙" android:textSize="20sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Your Robux is on the way! Open the Roblox app to see your updated balance."
+                    android:textColor="@color/text_secondary" android:textSize="12sp"
+                    android:gravity="center" android:layout_marginTop="18dp"
+                    android:layout_marginBottom="24dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSuccessDone"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:text="Done  ✓" android:textSize="15sp" android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:background="@drawable/btn_gold_rounded"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

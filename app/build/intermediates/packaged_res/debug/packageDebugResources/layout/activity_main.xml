@@ -4,36 +4,89 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/bg_primary">
+    android:background="@color/bg_primary"
+    android:fitsSystemWindows="true">
 
-    <!-- Header -->
+    <!-- ═══ Header ══════════════════════════════════════════════════════════ -->
+    <!--  Single horizontal row: coin | text-block (3 lines) | gear          -->
+    <!--  All 3 text lines share the same left edge → perfect alignment      -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/bg_surface"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
         android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:orientation="vertical">
+        android:paddingEnd="12dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
 
+        <!-- Coin icon — vertically centered against the full 3-line block -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textColor="@color/text_primary"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:letterSpacing="0.01" />
+            android:text="🪙"
+            android:textSize="24sp"
+            android:layout_marginEnd="12dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <!-- 3-line text block — tappable, opens Transfer flow -->
+        <LinearLayout
+            android:id="@+id/balanceChip"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:text="@string/subtext"
-            android:textColor="@color/gold"
-            android:textSize="12sp"
-            android:letterSpacing="0.04" />
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!-- Line 1: micro-label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EARNED  ›  tap to transfer"
+                android:textColor="@color/text_secondary"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.10"/>
+
+            <!-- Line 2: balance number (no R$ prefix — coin icon acts as symbol) -->
+            <TextView
+                android:id="@+id/tvHeaderBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/gold"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"/>
+
+            <!-- Line 3: greeting — same left edge as label and number above -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to,  "
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RBX Calculator"
+                    android:textColor="@color/gold"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
     <!-- Gold divider line -->
@@ -58,7 +111,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="💱  RBX CALCULATORS"
+                android:text="RBX CALCULATORS"
                 android:textColor="@color/gold"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -82,8 +135,9 @@
                     app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:orientation="vertical" android:padding="16dp" android:gravity="center">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="💰" android:textSize="34sp" />
+                        <ImageView android:layout_width="38dp" android:layout_height="38dp"
+                            android:src="@drawable/ic_wallet"
+                            android:tint="@color/gold" android:scaleType="fitCenter"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="RBX → USD" android:textStyle="bold" android:textSize="13sp"
                             android:textColor="@color/text_primary"
@@ -102,8 +156,9 @@
                     app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:orientation="vertical" android:padding="16dp" android:gravity="center">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="💵" android:textSize="34sp" />
+                        <ImageView android:layout_width="38dp" android:layout_height="38dp"
+                            android:src="@drawable/ic_dollar"
+                            android:tint="@color/gold" android:scaleType="fitCenter"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="USD → RBX" android:textStyle="bold" android:textSize="13sp"
                             android:textColor="@color/text_primary"
@@ -122,8 +177,9 @@
                     app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:orientation="vertical" android:padding="16dp" android:gravity="center">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="🏦" android:textSize="34sp" />
+                        <ImageView android:layout_width="38dp" android:layout_height="38dp"
+                            android:src="@drawable/ic_bank"
+                            android:tint="@color/gold" android:scaleType="fitCenter"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="RBX → Dollar" android:textStyle="bold" android:textSize="13sp"
                             android:textColor="@color/text_primary"
@@ -142,8 +198,9 @@
                     app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:orientation="vertical" android:padding="16dp" android:gravity="center">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="🛒" android:textSize="34sp" />
+                        <ImageView android:layout_width="38dp" android:layout_height="38dp"
+                            android:src="@drawable/ic_exchange"
+                            android:tint="@color/gold" android:scaleType="fitCenter"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="Dollar → RBX" android:textStyle="bold" android:textSize="13sp"
                             android:textColor="@color/text_primary"
@@ -175,7 +232,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="👑  MEMBERSHIP"
+                android:text="MEMBERSHIP"
                 android:textColor="@color/gold"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -194,8 +251,9 @@
                 app:cardBackgroundColor="@color/bg_surface">
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                     android:orientation="horizontal" android:padding="18dp" android:gravity="center_vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="👑" android:textSize="28sp" />
+                    <ImageView android:layout_width="32dp" android:layout_height="32dp"
+                        android:src="@drawable/ic_gem"
+                        android:tint="@color/gold" android:scaleType="fitCenter"/>
                     <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="14dp">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -210,11 +268,90 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- ── Daily Reward Banner ── -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDailyReward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/bg_surface">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="18dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView android:layout_width="34dp" android:layout_height="34dp"
+                        android:src="@drawable/ic_trophy"
+                        android:tint="@color/gold" android:scaleType="fitCenter"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Daily Reward"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:textColor="@color/text_primary" />
+
+                            <!-- Live badge — shown/hidden in MainActivity.onResume -->
+                            <TextView
+                                android:id="@+id/tvRewardBadge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" NEW"
+                                android:textSize="9sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_on_gold"
+                                android:background="@color/gold"
+                                android:paddingHorizontal="5dp"
+                                android:paddingVertical="2dp"
+                                android:layout_marginStart="8dp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvRewardStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Claim your daily Robux"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="2dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textSize="24sp"
+                        android:textColor="@color/gold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
             <!-- ── Games Section ── -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="🎮  GAMES &amp; FUN"
+                android:text="GAMES &amp; FUN"
                 android:textColor="@color/gold"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -234,8 +371,9 @@
                     app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:orientation="vertical" android:padding="16dp" android:gravity="center">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="🎡" android:textSize="34sp" />
+                        <ImageView android:layout_width="38dp" android:layout_height="38dp"
+                            android:src="@drawable/ic_spinwheel"
+                            android:tint="@color/gold" android:scaleType="fitCenter"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="Spin Wheel" android:textStyle="bold" android:textSize="13sp"
                             android:textColor="@color/text_primary"
@@ -250,8 +388,9 @@
                     app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:orientation="vertical" android:padding="16dp" android:gravity="center">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="❓" android:textSize="34sp" />
+                        <ImageView android:layout_width="38dp" android:layout_height="38dp"
+                            android:src="@drawable/ic_quiz"
+                            android:tint="@color/gold" android:scaleType="fitCenter"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="Quiz Time" android:textStyle="bold" android:textSize="13sp"
                             android:textColor="@color/text_primary"
@@ -266,8 +405,9 @@
                     app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:orientation="vertical" android:padding="16dp" android:gravity="center">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="🎴" android:textSize="34sp" />
+                        <ImageView android:layout_width="38dp" android:layout_height="38dp"
+                            android:src="@drawable/ic_scratch_card"
+                            android:tint="@color/gold" android:scaleType="fitCenter"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="Scratch Card" android:textStyle="bold" android:textSize="13sp"
                             android:textColor="@color/text_primary"
@@ -282,8 +422,9 @@
                     app:cardBackgroundColor="@color/bg_surface">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:orientation="vertical" android:padding="16dp" android:gravity="center">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="😂" android:textSize="34sp" />
+                        <ImageView android:layout_width="38dp" android:layout_height="38dp"
+                            android:src="@drawable/ic_gallery"
+                            android:tint="@color/gold" android:scaleType="fitCenter"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                             android:text="Memes" android:textStyle="bold" android:textSize="13sp"
                             android:textColor="@color/text_primary"
@@ -296,7 +437,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="📚  MORE"
+                android:text="MORE"
                 android:textColor="@color/gold"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -312,8 +453,9 @@
                 app:cardBackgroundColor="@color/bg_surface">
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                     android:orientation="horizontal" android:padding="18dp" android:gravity="center_vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="💡" android:textSize="26sp" />
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp"
+                        android:src="@drawable/ic_book_open"
+                        android:tint="@color/gold" android:scaleType="fitCenter"/>
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:layout_marginStart="14dp"
                         android:text="Tips &amp; Guides" android:textStyle="bold" android:textSize="14sp"
@@ -331,8 +473,9 @@
                 app:cardBackgroundColor="@color/bg_surface">
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                     android:orientation="horizontal" android:padding="18dp" android:gravity="center_vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="⚙️" android:textSize="26sp" />
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp"
+                        android:src="@drawable/ic_settings_cog"
+                        android:tint="@color/gold" android:scaleType="fitCenter"/>
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:layout_marginStart="14dp"
                         android:text="Settings" android:textStyle="bold" android:textSize="14sp"
@@ -350,8 +493,9 @@
                 app:cardBackgroundColor="@color/bg_surface">
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                     android:orientation="horizontal" android:padding="18dp" android:gravity="center_vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="🚪" android:textSize="26sp" />
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp"
+                        android:src="@drawable/ic_power"
+                        android:tint="@color/gold" android:scaleType="fitCenter"/>
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:layout_marginStart="14dp"
                         android:text="Exit" android:textStyle="bold" android:textSize="14sp"
