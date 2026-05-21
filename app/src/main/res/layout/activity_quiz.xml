@@ -138,4 +138,10 @@
             android:textStyle="bold" android:textColor="@color/text_primary"
             android:backgroundTint="@color/bg_surface" app:cornerRadius="26dp"/>
     </LinearLayout>
+
+    <!-- bhisma small banner pinned at bottom -->
+    <RelativeLayout
+        android:id="@+id/bannerx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

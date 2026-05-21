@@ -506,6 +506,20 @@
             </androidx.cardview.widget.CardView>
 
             <View android:layout_width="match_parent" android:layout_height="16dp" />
+
+            <!-- bhisma big native ad slot (~250dp inside scroll) -->
+            <RelativeLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginBottom="8dp" />
         </LinearLayout>
     </ScrollView>
+
+    <!-- bhisma small banner pinned at bottom -->
+    <RelativeLayout
+        android:id="@+id/bannerx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

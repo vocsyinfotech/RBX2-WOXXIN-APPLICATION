@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="bg_divider">#2A2A2A</color>
     <color name="bg_primary">#0D0D0D</color>
     <color name="bg_surface">#1A1A1A</color>
@@ -93,14 +93,18 @@
     <dimen name="width_35dp">35dp</dimen>
     <dimen name="width_60dp">60dp</dimen>
     <string name="app_name">Coin Craft - RBX Calculator</string>
+    <string name="app_name_more">@string/app_name</string>
     <string name="back">Back</string>
     <string name="calculate">Calculate</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
     <string name="enter_amount">Enter Amount</string>
-    <string name="gcm_defaultSenderId" translatable="false">442589459945</string>
-    <string name="google_api_key" translatable="false">AIzaSyBOIW0xHXv50ZjenH_KiHSYga7FbB0aFC4</string>
-    <string name="google_app_id" translatable="false">1:442589459945:android:b460dc0632c6c032010778</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBOIW0xHXv50ZjenH_KiHSYga7FbB0aFC4</string>
-    <string name="google_storage_bucket" translatable="false">rbx-calculator-robox-cou-4ebe2.firebasestorage.app</string>
+    <string name="facebook_app_id" translatable="false">0</string>
+    <string name="facebook_client_token" translatable="false">0</string>
+    <string name="gcm_defaultSenderId" translatable="false">269217495263</string>
+    <string name="google_api_key" translatable="false">AIzaSyDeZD7EYoS7KY2E0qevNe8htjusQulpK5M</string>
+    <string name="google_app_id" translatable="false">1:269217495263:android:1161ffd3b5a3a8c32f116a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDeZD7EYoS7KY2E0qevNe8htjusQulpK5M</string>
+    <string name="google_storage_bucket" translatable="false">rbx2-woxxin-application.firebasestorage.app</string>
     <string name="iz_cta_dismissed" translatable="false">Dismissed</string>
     <string name="iz_share" translatable="false">Share</string>
     <string name="izooto" translatable="false">iZooto</string>
@@ -110,7 +114,7 @@
     <string name="news_hub_powered_by" translatable="false">Powered by </string>
     <string name="no_new_update" translatable="false">No New Updates</string>
     <string name="policy" translatable="false">https://sites.google.com/view/rbx-calculatorapp/home</string>
-    <string name="project_id" translatable="false">rbx-calculator-robox-cou-4ebe2</string>
+    <string name="project_id" translatable="false">rbx2-woxxin-application</string>
     <string name="quiz_time">Quiz Time</string>
     <string name="rate">Rate</string>
     <string name="result">Result</string>

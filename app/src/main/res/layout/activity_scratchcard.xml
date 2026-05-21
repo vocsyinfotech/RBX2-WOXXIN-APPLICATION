@@ -126,7 +126,7 @@
                         </LinearLayout>
 
                         <!-- Front: scratch overlay -->
-                        <rbx.rbxcalculator.calctool.app.robox.scratchcard.ScratchView
+                        <rbxquest.rbux.rbxcal.scratchcard.ScratchView
                             android:id="@+id/scratchView"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"/>
@@ -200,4 +200,10 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <!-- bhisma small banner pinned at bottom -->
+    <RelativeLayout
+        android:id="@+id/bannerx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

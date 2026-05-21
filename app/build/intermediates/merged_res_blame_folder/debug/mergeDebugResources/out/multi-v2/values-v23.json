@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-v23/values-v23.xml",
+            "outputFile": "rbxquest.rbux.rbxcal.app-mergeDebugResources-70:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/5f617aa07f5db0b71a8491b13898cc67/transformed/work-runtime-2.7.0/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,121",
-                        "endColumns": "65,62",
-                        "endOffsets": "116,179"
-                    }
-                },
-                {
-                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/2317c4883f23c6c8922916948ed77225/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/8199ae8e5168de360326895cc5c237b1/transformed/appcompat-1.7.1/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -33,7 +23,26 @@
                     }
                 },
                 {
-                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/9f06a2b80b25764227dc100144d8388a/transformed/material-1.12.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/5e37f09ac507a1bfec0a7d4fda33f156/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "52",
+                        "startColumns": "4",
+                        "startOffsets": "3361",
+                        "endLines": "54",
+                        "endColumns": "12",
+                        "endOffsets": "3506"
+                    }
+                },
+                {
+                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/688ec46ec6595aca9cde9ef3d40447c2/transformed/material-1.13.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -52,22 +61,13 @@
                     }
                 },
                 {
-                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/039f09c22d3359af165b7abb667de7a9/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/1e8849284510cc048174bc1ee70102d8/transformed/work-runtime-2.7.0/res/values-v23/values-v23.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "200"
-                    },
-                    "to": {
-                        "startLines": "52",
-                        "startColumns": "4",
-                        "startOffsets": "3361",
-                        "endLines": "54",
-                        "endColumns": "12",
-                        "endOffsets": "3506"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
                     }
                 }
             ]

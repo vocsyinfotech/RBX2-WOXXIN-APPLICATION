@@ -71,6 +71,15 @@
         android:orientation="vertical"
         android:gravity="center">
 
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:indeterminateTint="@color/gold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,12 +88,6 @@
             android:textSize="14sp"
             android:letterSpacing="0.12" />
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="28dp"
-            android:indeterminateTint="@color/gold" />
     </LinearLayout>
 
 </FrameLayout>

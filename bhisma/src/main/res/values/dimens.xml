@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="lottie_width">120dp</dimen>
+    <dimen name="lottie_height">120dp</dimen>
+</resources>

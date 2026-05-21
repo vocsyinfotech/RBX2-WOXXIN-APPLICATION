@@ -26,4 +26,10 @@
         android:layout_weight="1"
         android:padding="12dp"
         android:clipToPadding="false" />
+
+    <!-- bhisma small banner pinned at bottom -->
+    <RelativeLayout
+        android:id="@+id/bannerx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

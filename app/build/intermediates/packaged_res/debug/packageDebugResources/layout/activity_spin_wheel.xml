@@ -72,7 +72,7 @@
                 android:layout_marginBottom="0dp" />
 
             <!-- Wheel — fixed 300×300 dp, no clipping issues -->
-            <rbx.rbxcalculator.calctool.app.robox.spin.WheelView
+            <rbxquest.rbux.rbxcal.spin.WheelView
                 android:id="@+id/wheelView"
                 android:layout_width="300dp"
                 android:layout_height="300dp" />
@@ -124,4 +124,10 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <!-- bhisma small banner pinned at bottom -->
+    <RelativeLayout
+        android:id="@+id/bannerx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

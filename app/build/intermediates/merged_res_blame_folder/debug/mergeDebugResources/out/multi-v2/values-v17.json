@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-v17/values-v17.xml",
+            "outputFile": "rbxquest.rbux.rbxcal.app-mergeDebugResources-70:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/2317c4883f23c6c8922916948ed77225/transformed/appcompat-1.7.0/res/values-v17/values-v17.xml",
+                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/8199ae8e5168de360326895cc5c237b1/transformed/appcompat-1.7.1/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

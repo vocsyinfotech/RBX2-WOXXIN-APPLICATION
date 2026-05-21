@@ -1,18 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+            "outputFile": "rbxquest.rbux.rbxcal.app-mergeDebugResources-70:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
             "map": [
-                {
-                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/9f06a2b80b25764227dc100144d8388a/transformed/material-1.12.0/res/values-w400dp-port-v13/values-w400dp-port-v13.xml",
-                    "from": {
-                        "startLines": "5,6",
-                        "startColumns": "4,4",
-                        "startOffsets": "226,293",
-                        "endColumns": "66,64",
-                        "endOffsets": "288,353"
-                    }
-                },
                 {
                     "source": "/Users/kaushikgodhani/Desktop/Claude/RBX2-WOXXIN-APPLICATION/app/src/main/res/values-w400dp-port/dimens.xml",
                     "from": {
@@ -28,6 +18,16 @@
                         "startOffsets": "55,114,170,358,413,478",
                         "endColumns": "58,55,55,54,64,68",
                         "endOffsets": "109,165,221,408,473,542"
+                    }
+                },
+                {
+                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/688ec46ec6595aca9cde9ef3d40447c2/transformed/material-1.13.0/res/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+                    "from": {
+                        "startLines": "5,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "226,293",
+                        "endColumns": "66,64",
+                        "endOffsets": "288,353"
                     }
                 }
             ]

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="gcm_defaultSenderId" translatable="false">442589459945</string>
-    <string name="google_api_key" translatable="false">AIzaSyBOIW0xHXv50ZjenH_KiHSYga7FbB0aFC4</string>
-    <string name="google_app_id" translatable="false">1:442589459945:android:b460dc0632c6c032010778</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBOIW0xHXv50ZjenH_KiHSYga7FbB0aFC4</string>
-    <string name="google_storage_bucket" translatable="false">rbx-calculator-robox-cou-4ebe2.firebasestorage.app</string>
-    <string name="project_id" translatable="false">rbx-calculator-robox-cou-4ebe2</string>
+    <string name="gcm_defaultSenderId" translatable="false">269217495263</string>
+    <string name="google_api_key" translatable="false">AIzaSyDeZD7EYoS7KY2E0qevNe8htjusQulpK5M</string>
+    <string name="google_app_id" translatable="false">1:269217495263:android:1161ffd3b5a3a8c32f116a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDeZD7EYoS7KY2E0qevNe8htjusQulpK5M</string>
+    <string name="google_storage_bucket" translatable="false">rbx2-woxxin-application.firebasestorage.app</string>
+    <string name="project_id" translatable="false">rbx2-woxxin-application</string>
 </resources>

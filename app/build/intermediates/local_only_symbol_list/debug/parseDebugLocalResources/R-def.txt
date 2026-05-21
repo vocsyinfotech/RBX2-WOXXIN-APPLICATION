@@ -651,6 +651,8 @@ id ad_container
 id ad_stars
 id alertTitle
 id balanceChip
+id banner
+id bannerx
 id browser_actions_header_text
 id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
@@ -922,9 +924,13 @@ mipmap ic_launcher_round
 raw coins_sounds
 raw firebase_common_keep
 string app_name
+string app_name_more
 string back
 string calculate
+string com.google.firebase.crashlytics.mapping_file_id
 string enter_amount
+string facebook_app_id
+string facebook_client_token
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

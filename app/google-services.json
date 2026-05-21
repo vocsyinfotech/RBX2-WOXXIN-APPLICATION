@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "442589459945",
-    "project_id": "rbx-calculator-robox-cou-4ebe2",
-    "storage_bucket": "rbx-calculator-robox-cou-4ebe2.firebasestorage.app"
+    "project_number": "269217495263",
+    "project_id": "rbx2-woxxin-application",
+    "storage_bucket": "rbx2-woxxin-application.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:442589459945:android:b460dc0632c6c032010778",
+        "mobilesdk_app_id": "1:269217495263:android:1161ffd3b5a3a8c32f116a",
         "android_client_info": {
-          "package_name": "rbx.rbxcalculator.calctool.app.robox"
+          "package_name": "rbxquest.rbux.rbxcal"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBOIW0xHXv50ZjenH_KiHSYga7FbB0aFC4"
+          "current_key": "AIzaSyDeZD7EYoS7KY2E0qevNe8htjusQulpK5M"
         }
       ],
       "services": {
