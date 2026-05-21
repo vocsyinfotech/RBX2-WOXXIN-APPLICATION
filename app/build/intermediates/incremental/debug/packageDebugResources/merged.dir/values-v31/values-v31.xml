@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.RbxCalculator.Splash" parent="Theme.RbxCalculatorRoboxCounter">
-        <item name="android:windowSplashScreenBackground">@color/bg_primary</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
-        <item name="android:windowSplashScreenIconBackgroundColor">@color/gold_10</item>
-    </style>
-</resources>
