@@ -4,7 +4,7 @@
             "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "F:\\android\\woxxin\\WRBX1\\RbxCalculator\\app\\src\\main\\res\\values-h320dp-port\\dimens.xml",
+                    "source": "/Users/kaushikgodhani/Desktop/Claude/RBX2-WOXXIN-APPLICATION/app/src/main/res/values-h320dp-port/dimens.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

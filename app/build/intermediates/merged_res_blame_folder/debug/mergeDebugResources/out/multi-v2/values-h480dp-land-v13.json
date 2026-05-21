@@ -4,7 +4,7 @@
             "outputFile": "rbx.rbxcalculator.calctool.app.robox.app-mergeDebugResources-48:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "F:\\android\\woxxin\\WRBX1\\RbxCalculator\\app\\src\\main\\res\\values-h480dp-land\\dimens.xml",
+                    "source": "/Users/kaushikgodhani/Desktop/Claude/RBX2-WOXXIN-APPLICATION/app/src/main/res/values-h480dp-land/dimens.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-4\\9f06a2b80b25764227dc100144d8388a\\transformed\\material-1.12.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "/Users/kaushikgodhani/.gradle/caches/transforms-4/9f06a2b80b25764227dc100144d8388a/transformed/material-1.12.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "5,6,8",
                         "startColumns": "4,4,4",
