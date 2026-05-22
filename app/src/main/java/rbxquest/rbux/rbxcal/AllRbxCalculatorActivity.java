@@ -11,6 +11,7 @@ import rbxquest.rbux.rbxcal.allcalc.UsdToRbxActivity;
 import rbxquest.rbux.rbxcal.membership.BcToRbxActivity;
 import rbxquest.rbux.rbxcal.membership.MembershipCalculator;
 import rbxquest.rbux.rbxcal.membership.ObcToRbxActivity;
+import rbxquest.rbux.rbxcal.helpers.BhismaAds;
 import rbxquest.rbux.rbxcal.membership.TbcToUsdActivity;
 
 public class AllRbxCalculatorActivity extends AppCompatActivity implements View.OnClickListener {
@@ -19,6 +20,7 @@ public class AllRbxCalculatorActivity extends AppCompatActivity implements View.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_calc);
+        BhismaAds.attach(this);
 
         int[] ids = {
                 R.id.btnRbxToUsd, R.id.btnUsdToRbx,

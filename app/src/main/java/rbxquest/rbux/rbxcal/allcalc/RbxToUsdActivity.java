@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import rbxquest.rbux.rbxcal.R;
+import rbxquest.rbux.rbxcal.helpers.BhismaAds;
 import rbxquest.rbux.rbxcal.helpers.MyApp;
 
 public class RbxToUsdActivity extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class RbxToUsdActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
+        BhismaAds.attach(this);
 
         Log.d(TAG, "💰 RbxToUsdActivity opened");
         MyApp.logEvent("screen_view", "screen_name", "rbx_to_usd");

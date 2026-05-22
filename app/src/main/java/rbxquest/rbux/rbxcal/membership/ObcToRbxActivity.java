@@ -6,6 +6,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import rbxquest.rbux.rbxcal.R;
+import rbxquest.rbux.rbxcal.helpers.BhismaAds;
 
 public class ObcToRbxActivity extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class ObcToRbxActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
+        BhismaAds.attach(this);
 
         ((TextView) findViewById(R.id.tvCalcTitle)).setText("OBC to Robux");
         ((TextView) findViewById(R.id.tvInputHint)).setText("Enter number of days");

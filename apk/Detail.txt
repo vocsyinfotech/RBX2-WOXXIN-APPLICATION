@@ -1,0 +1,18 @@
+
+
+
+package name =  rbxquest.rbux.rbxcal
+
+Name = Coin Craft - RBX Calculator
+
+
+keytool -list -v -keystore "/Users/kaushikgodhani/Desktop/Claude/RBX2-WOXXIN-APPLICATION/apk/rbx2appwoxxin.jks" -alias rbx2appwoxxin -storepass rbx2appwoxxin -keypass rbx2appwoxxin
+
+
+
+ SHA1: 65:24:2D:16:D7:3E:50:60:65:5F:34:19:26:93:C6:5F:77:70:D5:DC
+	 SHA256: 1E:83:8B:94:F0:F4:26:F9:B2:7F:04:3F:13:E2:22:2E:02:96:29:79:A9:57:5E:7E:00:29:5B:5B:5A:07:F4:02
+Signature algorithm name: SHA256withRSA
+
+
+Firebase Mail id = kapadiyanishaarvindbhai@gmail.com

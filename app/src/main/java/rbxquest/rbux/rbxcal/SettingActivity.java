@@ -7,12 +7,15 @@ import android.view.View;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
+import rbxquest.rbux.rbxcal.helpers.BhismaAds;
+
 public class SettingActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+        BhismaAds.attach(this);
         findViewById(R.id.btnRate).setOnClickListener(this);
         findViewById(R.id.btnShare).setOnClickListener(this);
         findViewById(R.id.btnPolicy).setOnClickListener(this);

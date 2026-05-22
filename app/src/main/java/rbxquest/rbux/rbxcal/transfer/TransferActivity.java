@@ -19,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.content.ContextCompat;
 import rbxquest.rbux.rbxcal.R;
+import rbxquest.rbux.rbxcal.helpers.BhismaAds;
 import rbxquest.rbux.rbxcal.helpers.MyApp;
 import java.util.Random;
 
@@ -39,6 +40,7 @@ public class TransferActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transfer);
+        BhismaAds.attach(this);
 
         MyApp.logEvent("screen_view", "screen_name", "transfer");
 

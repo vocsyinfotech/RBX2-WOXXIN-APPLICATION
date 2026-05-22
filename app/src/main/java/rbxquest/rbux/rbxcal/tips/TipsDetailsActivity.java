@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import rbxquest.rbux.rbxcal.R;
+import rbxquest.rbux.rbxcal.helpers.BhismaAds;
 
 public class TipsDetailsActivity extends AppCompatActivity {
 
@@ -11,6 +12,7 @@ public class TipsDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips_details);
+        BhismaAds.attach(this);
 
         String title = getIntent().getStringExtra(TipsActivity.EXTRA_TITLE);
         String detail = getIntent().getStringExtra(TipsActivity.EXTRA_DETAIL);

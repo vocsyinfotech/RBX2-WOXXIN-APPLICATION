@@ -14,6 +14,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.bhasma.OnJsonCallBackListner;
+import com.bhasma.OnSpleshJsonCallBackListner;
 import com.bhasma.Pizza;
 
 import rbxquest.rbux.rbxcal.helpers.AdConstants;
@@ -120,7 +121,18 @@ public class SplashActivity extends AppCompatActivity implements OnJsonCallBackL
         );
         Log.d(TAG, "✅ Bhisma Pizza initialized");
 
-        // Trigger gist fetch + interstitial counter (no UI takeover — keeps existing layout)
+        // Trigger the gist fetch WITHOUT bhisma's Splesh_Screen dialog overlay.
+        // Pizza.Splesh_Screen() is normally what fires the gist AsyncTask, but it
+        // also shows a full-screen Dialog we don't want — we have our own splash UI.
+        // Setting a no-op splesh_callbck prevents NPE in GetData.onPostExecute,
+        // then we kick off the AsyncTask manually so the gist (counter_ads, show_ads,
+        // Qureka URLs, etc.) overrides the compile-time defaults at runtime.
+        Pizza.splesh_callbck = new OnSpleshJsonCallBackListner() {
+            @Override public void OnSpleshJsonDone() { /* no-op */ }
+        };
+        new Pizza.GetData().execute();
+
+        // Counter-interstitial bump for the splash entry itself.
         pizza.Interstial_Counted(this);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {

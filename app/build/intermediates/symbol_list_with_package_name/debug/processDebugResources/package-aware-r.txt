@@ -5085,7 +5085,10 @@ id background
 id balanceChip
 id banner
 id banner1
+id banner2
 id banner22
+id banner3
+id bannerInList
 id bannerx
 id barrier
 id baseline
@@ -5968,6 +5971,7 @@ layout ime_secondary_split_test_activity
 layout item_adaptive_banner_ad
 layout item_meme_page
 layout item_tip
+layout item_tip_ad
 layout load_more
 layout loading_ads_full
 layout loading_ads_inter

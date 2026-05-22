@@ -228,6 +228,14 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- bhisma big native #2: after All Calculators CTA -->
+            <RelativeLayout
+                android:id="@+id/banner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="5dp" />
+
             <!-- ── Membership Section ── -->
             <TextView
                 android:layout_width="wrap_content"
@@ -346,6 +354,14 @@
                         android:textColor="@color/gold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+            <!-- bhisma big native #3: before GAMES & FUN -->
+            <RelativeLayout
+                android:id="@+id/banner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="5dp" />
 
             <!-- ── Games Section ── -->
             <TextView

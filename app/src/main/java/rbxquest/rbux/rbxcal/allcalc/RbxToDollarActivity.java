@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import rbxquest.rbux.rbxcal.R;
+import rbxquest.rbux.rbxcal.helpers.BhismaAds;
 
 public class RbxToDollarActivity extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class RbxToDollarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
+        BhismaAds.attach(this);
 
         ((TextView) findViewById(R.id.tvCalcTitle)).setText("Robux to Dollar (DevEx)");
         ((TextView) findViewById(R.id.tvInputHint)).setText("Enter Robux amount");

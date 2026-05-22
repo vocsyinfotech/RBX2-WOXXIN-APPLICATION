@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import rbxquest.rbux.rbxcal.R;
+import rbxquest.rbux.rbxcal.helpers.BhismaAds;
 import rbxquest.rbux.rbxcal.helpers.MyApp;
 
 public class MemeActivity extends AppCompatActivity {
@@ -51,6 +52,7 @@ public class MemeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meme);
+        BhismaAds.attach(this);
 
         Log.d(TAG, "😂 MemeActivity opened");
         MyApp.logEvent("screen_view", "screen_name", "memes");

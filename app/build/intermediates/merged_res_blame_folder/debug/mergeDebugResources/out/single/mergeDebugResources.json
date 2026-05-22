@@ -8,12 +8,12 @@
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/anim/design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_res_0x7f070008_m3_avd_hide_password__1.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/res_0x7f070008_m3_avd_hide_password__1.xml"
-    },
-    {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color_common_google_signin_btn_text_dark.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_res_0x7f070008_m3_avd_hide_password__1.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/res_0x7f070008_m3_avd_hide_password__1.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_obc_to_rbx.png.flat",
@@ -68,44 +68,44 @@
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/anim/fade_in.xml"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_round_ad_5.png.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_round_ad_5.png"
-    },
-    {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_call_decline.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_call_decline.xml"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color-night_material_timepicker_button_stroke.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color-night/material_timepicker_button_stroke.xml"
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_round_ad_5.png.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_round_ad_5.png"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/anim_linear_indeterminate_line1_tail_interpolator.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/anim/linear_indeterminate_line1_tail_interpolator.xml"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/layout-v26_abc_screen_toolbar.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/layout-v26/abc_screen_toolbar.xml"
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color-night_material_timepicker_button_stroke.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color-night/material_timepicker_button_stroke.xml"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/anim_btn_radio_to_off_mtrl_dot_group_animation.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/anim/btn_radio_to_off_mtrl_dot_group_animation.xml"
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/layout-v26_abc_screen_toolbar.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/layout-v26/abc_screen_toolbar.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ad.png.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ad.png"
     },
     {
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/anim_btn_radio_to_off_mtrl_dot_group_animation.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/anim/btn_radio_to_off_mtrl_dot_group_animation.xml"
+    },
+    {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color_abc_search_url_text.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color/abc_search_url_text.xml"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_mtrl_ic_cancel.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/mtrl_ic_cancel.xml"
-    },
-    {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/anim_abc_slide_out_top.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_mtrl_ic_cancel.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/mtrl_ic_cancel.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/xml_gma_ad_services_config.xml.flat",
@@ -120,24 +120,24 @@
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_meme_bg.png"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color_common_google_signin_btn_tint.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color/common_google_signin_btn_tint.xml"
-    },
-    {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/layout_activity_main.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color_common_google_signin_btn_tint.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color/common_google_signin_btn_tint.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_party_popper.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_party_popper.xml"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_iz_nh_background.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/iz_nh_background.xml"
-    },
-    {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/interpolator_m3_sys_motion_easing_standard_accelerate.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/interpolator/m3_sys_motion_easing_standard_accelerate.xml"
+    },
+    {
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_iz_nh_background.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/iz_nh_background.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_download.png.flat",
@@ -204,16 +204,16 @@
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/layout/custom_dialog.xml"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_m3_chip_check.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_m3_chip_check.xml"
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_mtrl_ic_checkbox_unchecked.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/mtrl_ic_checkbox_unchecked.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_round_9.png.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_round_9.png"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_mtrl_ic_checkbox_unchecked.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/mtrl_ic_checkbox_unchecked.xml"
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_m3_chip_check.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_m3_chip_check.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color_abc_tint_spinner.xml.flat",
@@ -288,16 +288,16 @@
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_book_open.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_book_open.xml"
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color_abc_tint_seek_thumb.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color/abc_tint_seek_thumb.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color_material_personalized_color_primary_text_inverse.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color/material_personalized_color_primary_text_inverse.xml"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color_abc_tint_seek_thumb.xml.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color/abc_tint_seek_thumb.xml"
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_book_open.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_book_open.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color_mtrl_choice_chip_ripple_color.xml.flat",
@@ -328,12 +328,12 @@
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color/mtrl_filled_background_color.xml"
     },
     {
-        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_tips_bg.png.flat",
-        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_tips_bg.png"
-    },
-    {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/color_material_on_background_emphasis_medium.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/color/material_on_background_emphasis_medium.xml"
+    },
+    {
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_tips_bg.png.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_tips_bg.png"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_ic_close.xml.flat",
@@ -362,6 +362,10 @@
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_m3_radiobutton_ripple.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/m3_radiobutton_ripple.xml"
+    },
+    {
+        "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/layout_item_tip_ad.xml.flat",
+        "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/layout/item_tip_ad.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_app_banner_4.png.flat",
@@ -1168,6 +1172,10 @@
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/ic_policy.png"
     },
     {
+        "merged": "rbxquest.rbux.rbxcal.app-debug-72:/layout_activity_exit.xml.flat",
+        "source": "rbxquest.rbux.rbxcal.app-main-74:/layout/activity_exit.xml"
+    },
+    {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_abc_action_bar_item_background_material.xml.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/drawable/abc_action_bar_item_background_material.xml"
     },
@@ -1426,10 +1434,6 @@
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-main-74:/mipmap-hdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "rbxquest.rbux.rbxcal.app-debug-72:/layout_activity_splash.xml.flat",
-        "source": "rbxquest.rbux.rbxcal.app-main-74:/layout/activity_splash.xml"
     },
     {
         "merged": "/Users/kaushikgodhani/.gradle/daemon/8.7/rbxquest.rbux.rbxcal.app-debug-72:/drawable_abc_ic_search_api_material.xml.flat",

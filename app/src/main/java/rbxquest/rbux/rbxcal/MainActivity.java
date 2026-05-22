@@ -119,4 +119,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(this, dest));
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        // Home back-press → open the existing ExitScreen confirmation popup
+        // (which already has Yes/No buttons + a Qureka native ad).
+        Log.d(TAG, "🔙 Home back → opening ExitScreen");
+        startActivity(new Intent(this, ExitScreen.class));
+    }
 }
